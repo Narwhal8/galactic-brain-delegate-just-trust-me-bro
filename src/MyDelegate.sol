@@ -50,6 +50,10 @@ contract MyDelegate is
     uint256 private bonusThreshold2;
     uint256 private bonusThreshold3;
 
+    //Added function. If this bool is true it will enable a bonus for small buyers instead of large ones                                  //
+     bool private smallContributionBonus;
+
+
     // Added ability. Checks to make sure you didn't accidentally let someone mint more tokens than they can make on redeem               //
 
     uint256 public SafetyNumber;
@@ -146,7 +150,8 @@ contract MyDelegate is
         uint256 _payoutbonus3,
         uint256 _bonusThreshold1,
         uint256 _bonusThreshold2,
-        uint256 _bonusThreshold3
+        uint256 _bonusThreshold3,
+        bool _smallContributionBonus
     ) {
         payoutbonus1 = _payoutbonus1;
         payoutbonus2 = _payoutbonus2;
@@ -154,6 +159,34 @@ contract MyDelegate is
         bonusThreshold1 = _bonusThreshold1;
         bonusThreshold2 = _bonusThreshold2;
         bonusThreshold3 = _bonusThreshold3;
+        smallContributionBonus = _smallContributionBonus;
+
+        //Runs 1 of 2 checks depending on if the delegate is set to incentivize small or large buyers.  This is so that payout level 3 always has the highest bonus                //
+
+        require( 
+            payoutbonus1 <= payoutbonus2 &&
+            payoutbonus2 <= payoutbonus3 &&
+            payoutbonus1 <= payoutbonus3 &&
+            bonusThreshold1 <= _bonusThreshold2 &&
+            bonusThreshold2 <= _bonusThreshold3 &&
+            bonusThreshold1 <= _bonusThreshold3 ,
+            "Sorry, This bonus order is not valid if you want to incentivize larger contibutions"
+        );
+        
+
+
+
+        if (smallContributionBonus = true) {require( 
+            payoutbonus1 <= payoutbonus2 &&
+            payoutbonus2 <= payoutbonus3 &&
+            payoutbonus1 <= payoutbonus3 &&
+            bonusThreshold1 >= _bonusThreshold2 &&
+            bonusThreshold2 >= _bonusThreshold3 &&
+            bonusThreshold1 >= _bonusThreshold3 ,
+            "Sorry, This bonus order is not valid if you want to incentivize smaller contibutions"
+        );}
+        
+
     }
 
     /// @notice Initializes the clone contract with project details and a directory from which ecosystem payment terminals and controller can be found.
@@ -236,7 +269,23 @@ contract MyDelegate is
     }
 
     // Helper function to calculate the payout bonus based on the weight
-    function getPayoutBonus(uint256 weight) private view returns (uint256) {
+    function getPayoutBonus(uint256 weight) private returns (uint256) {
+        
+     if (smallContributionBonus = true) {
+            if (weight <= bonusThreshold3) {
+            return payoutbonus3;
+            } else if (weight <= bonusThreshold2) {
+            return payoutbonus2;
+            } else if (weight <= bonusThreshold1) {
+            return payoutbonus1;
+            } else {
+            return 100; // No bonus
+            }
+     }
+        
+        
+        
+        
         if (weight >= bonusThreshold3) {
             return payoutbonus3;
         } else if (weight >= bonusThreshold2) {

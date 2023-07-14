@@ -111,16 +111,16 @@
     }
   ],
   "bytecode": {
-    "object": "0x60c060405234801561001057600080fd5b5060405161060e38038061060e83398101604081905261002f9161005e565b6001600160a01b039182166080521660a052610098565b6001600160a01b038116811461005b57600080fd5b50565b6000806040838503121561007157600080fd5b825161007c81610046565b602084015190925061008d81610046565b809150509250929050565b60805160a0516105466100c86000396000818160a10152610155015260008181607a015260ca01526105466000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063a25f53be14610046578063a5fbd44a14610075578063d574ff041461009c575b600080fd5b61005961005436600461037c565b6100c3565b6040516001600160a01b03909116815260200160405180910390f35b6100597f000000000000000000000000000000000000000000000000000000000000000081565b6100597f000000000000000000000000000000000000000000000000000000000000000081565b60006100ee7f000000000000000000000000000000000000000000000000000000000000000061024b565b6040516318a2708160e11b81529091506001600160a01b03821690633144e1029061012190879086908890600401610479565b600060405180830381600087803b15801561013b57600080fd5b505af115801561014f573d6000803e3d6000fd5b505050507f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316635bcfd212306000808154610191906104e9565b91829055506040516001600160e01b031960e085901b1681526001600160a01b0390921660048301526024820152604401600060405180830381600087803b1580156101dc57600080fd5b505af11580156101f0573d6000803e3d6000fd5b5050604080518781526001600160a01b03858116602083015286168183015233606082015290517fbd318535ef41d837ffbebcb4725bbc083c0b01b23e236f2e4c3bcd8db2644a729350908190036080019150a19392505050565b6000763d602d80600a3d3981f3363d3d373d3d3d363d730000008260601b60e81c176000526e5af43d82803e903d91602b57fd5bf38260781b17602052603760096000f090506001600160a01b0381166102e45760405162461bcd60e51b8152602060048201526016602482015275115490cc4c4d8dce8818dc99585d194819985a5b195960521b604482015260640160405180910390fd5b919050565b634e487b7160e01b600052604160045260246000fd5b6040516020810167ffffffffffffffff81118282101715610322576103226102e9565b60405290565b604051601f8201601f1916810167ffffffffffffffff81118282101715610351576103516102e9565b604052919050565b6001600160a01b038116811461036e57600080fd5b50565b80356102e481610359565b60008060006060848603121561039157600080fd5b8335925060208085013567ffffffffffffffff808211156103b157600080fd5b81870191508282890312156103c557600080fd5b6103cd6102ff565b8235828111156103dc57600080fd5b80840193505088601f8401126103f157600080fd5b823582811115610403576104036102e9565b8060051b9250610414858401610328565b818152928401850192858101908b85111561042e57600080fd5b948601945b84861015610458578535925061044883610359565b8282529486019490860190610433565b83525090955061047093505050604086019050610371565b90509250925092565b8381526001600160a01b03838116602080840191909152606060408401819052845190840182905280516080850181905260009391830190849060a08701905b808310156104db578351851682529285019260019290920191908501906104b9565b509998505050505050505050565b60006001820161050957634e487b7160e01b600052601160045260246000fd5b506001019056fea2646970667358221220511367991d115713433a8689dd7c87f4cb7a1ca1cdc9e36f978aa913d0404b8a64736f6c63430008140033",
+    "object": "0x60c060405234801561001057600080fd5b5060405161060e38038061060e83398101604081905261002f9161005e565b6001600160a01b039182166080521660a052610098565b6001600160a01b038116811461005b57600080fd5b50565b6000806040838503121561007157600080fd5b825161007c81610046565b602084015190925061008d81610046565b809150509250929050565b60805160a0516105466100c86000396000818160a10152610155015260008181607a015260ca01526105466000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063a25f53be14610046578063a5fbd44a14610075578063d574ff041461009c575b600080fd5b61005961005436600461037c565b6100c3565b6040516001600160a01b03909116815260200160405180910390f35b6100597f000000000000000000000000000000000000000000000000000000000000000081565b6100597f000000000000000000000000000000000000000000000000000000000000000081565b60006100ee7f000000000000000000000000000000000000000000000000000000000000000061024b565b6040516318a2708160e11b81529091506001600160a01b03821690633144e1029061012190879086908890600401610479565b600060405180830381600087803b15801561013b57600080fd5b505af115801561014f573d6000803e3d6000fd5b505050507f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316635bcfd212306000808154610191906104e9565b91829055506040516001600160e01b031960e085901b1681526001600160a01b0390921660048301526024820152604401600060405180830381600087803b1580156101dc57600080fd5b505af11580156101f0573d6000803e3d6000fd5b5050604080518781526001600160a01b03858116602083015286168183015233606082015290517fbd318535ef41d837ffbebcb4725bbc083c0b01b23e236f2e4c3bcd8db2644a729350908190036080019150a19392505050565b6000763d602d80600a3d3981f3363d3d373d3d3d363d730000008260601b60e81c176000526e5af43d82803e903d91602b57fd5bf38260781b17602052603760096000f090506001600160a01b0381166102e45760405162461bcd60e51b8152602060048201526016602482015275115490cc4c4d8dce8818dc99585d194819985a5b195960521b604482015260640160405180910390fd5b919050565b634e487b7160e01b600052604160045260246000fd5b6040516020810167ffffffffffffffff81118282101715610322576103226102e9565b60405290565b604051601f8201601f1916810167ffffffffffffffff81118282101715610351576103516102e9565b604052919050565b6001600160a01b038116811461036e57600080fd5b50565b80356102e481610359565b60008060006060848603121561039157600080fd5b8335925060208085013567ffffffffffffffff808211156103b157600080fd5b81870191508282890312156103c557600080fd5b6103cd6102ff565b8235828111156103dc57600080fd5b80840193505088601f8401126103f157600080fd5b823582811115610403576104036102e9565b8060051b9250610414858401610328565b818152928401850192858101908b85111561042e57600080fd5b948601945b84861015610458578535925061044883610359565b8282529486019490860190610433565b83525090955061047093505050604086019050610371565b90509250925092565b8381526001600160a01b03838116602080840191909152606060408401819052845190840182905280516080850181905260009391830190849060a08701905b808310156104db578351851682529285019260019290920191908501906104b9565b509998505050505050505050565b60006001820161050957634e487b7160e01b600052601160045260246000fd5b506001019056fea26469706673582212202717150e5874858073e8abcd495d81031fcacb636c4f74ab84c6a3a7e435b10c64736f6c63430008140033",
     "sourceMap": "517:1967:62:-:0;;;1238:202;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;1337:48:62;;;;;1395:38;;;517:1967;;14:143:69;-1:-1:-1;;;;;101:31:69;;91:42;;81:70;;147:1;144;137:12;81:70;14:143;:::o;162:459::-;291:6;299;352:2;340:9;331:7;327:23;323:32;320:52;;;368:1;365;358:12;320:52;400:9;394:16;419:43;456:5;419:43;:::i;:::-;531:2;516:18;;510:25;481:5;;-1:-1:-1;544:45:69;510:25;544:45;:::i;:::-;608:7;598:17;;;162:459;;;;;:::o;:::-;517:1967:62;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
     "linkReferences": {}
   },
   "deployedBytecode": {
-    "object": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c8063a25f53be14610046578063a5fbd44a14610075578063d574ff041461009c575b600080fd5b61005961005436600461037c565b6100c3565b6040516001600160a01b03909116815260200160405180910390f35b6100597f000000000000000000000000000000000000000000000000000000000000000081565b6100597f000000000000000000000000000000000000000000000000000000000000000081565b60006100ee7f000000000000000000000000000000000000000000000000000000000000000061024b565b6040516318a2708160e11b81529091506001600160a01b03821690633144e1029061012190879086908890600401610479565b600060405180830381600087803b15801561013b57600080fd5b505af115801561014f573d6000803e3d6000fd5b505050507f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316635bcfd212306000808154610191906104e9565b91829055506040516001600160e01b031960e085901b1681526001600160a01b0390921660048301526024820152604401600060405180830381600087803b1580156101dc57600080fd5b505af11580156101f0573d6000803e3d6000fd5b5050604080518781526001600160a01b03858116602083015286168183015233606082015290517fbd318535ef41d837ffbebcb4725bbc083c0b01b23e236f2e4c3bcd8db2644a729350908190036080019150a19392505050565b6000763d602d80600a3d3981f3363d3d373d3d3d363d730000008260601b60e81c176000526e5af43d82803e903d91602b57fd5bf38260781b17602052603760096000f090506001600160a01b0381166102e45760405162461bcd60e51b8152602060048201526016602482015275115490cc4c4d8dce8818dc99585d194819985a5b195960521b604482015260640160405180910390fd5b919050565b634e487b7160e01b600052604160045260246000fd5b6040516020810167ffffffffffffffff81118282101715610322576103226102e9565b60405290565b604051601f8201601f1916810167ffffffffffffffff81118282101715610351576103516102e9565b604052919050565b6001600160a01b038116811461036e57600080fd5b50565b80356102e481610359565b60008060006060848603121561039157600080fd5b8335925060208085013567ffffffffffffffff808211156103b157600080fd5b81870191508282890312156103c557600080fd5b6103cd6102ff565b8235828111156103dc57600080fd5b80840193505088601f8401126103f157600080fd5b823582811115610403576104036102e9565b8060051b9250610414858401610328565b818152928401850192858101908b85111561042e57600080fd5b948601945b84861015610458578535925061044883610359565b8282529486019490860190610433565b83525090955061047093505050604086019050610371565b90509250925092565b8381526001600160a01b03838116602080840191909152606060408401819052845190840182905280516080850181905260009391830190849060a08701905b808310156104db578351851682529285019260019290920191908501906104b9565b509998505050505050505050565b60006001820161050957634e487b7160e01b600052601160045260246000fd5b506001019056fea2646970667358221220511367991d115713433a8689dd7c87f4cb7a1ca1cdc9e36f978aa913d0404b8a64736f6c63430008140033",
+    "object": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c8063a25f53be14610046578063a5fbd44a14610075578063d574ff041461009c575b600080fd5b61005961005436600461037c565b6100c3565b6040516001600160a01b03909116815260200160405180910390f35b6100597f000000000000000000000000000000000000000000000000000000000000000081565b6100597f000000000000000000000000000000000000000000000000000000000000000081565b60006100ee7f000000000000000000000000000000000000000000000000000000000000000061024b565b6040516318a2708160e11b81529091506001600160a01b03821690633144e1029061012190879086908890600401610479565b600060405180830381600087803b15801561013b57600080fd5b505af115801561014f573d6000803e3d6000fd5b505050507f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316635bcfd212306000808154610191906104e9565b91829055506040516001600160e01b031960e085901b1681526001600160a01b0390921660048301526024820152604401600060405180830381600087803b1580156101dc57600080fd5b505af11580156101f0573d6000803e3d6000fd5b5050604080518781526001600160a01b03858116602083015286168183015233606082015290517fbd318535ef41d837ffbebcb4725bbc083c0b01b23e236f2e4c3bcd8db2644a729350908190036080019150a19392505050565b6000763d602d80600a3d3981f3363d3d373d3d3d363d730000008260601b60e81c176000526e5af43d82803e903d91602b57fd5bf38260781b17602052603760096000f090506001600160a01b0381166102e45760405162461bcd60e51b8152602060048201526016602482015275115490cc4c4d8dce8818dc99585d194819985a5b195960521b604482015260640160405180910390fd5b919050565b634e487b7160e01b600052604160045260246000fd5b6040516020810167ffffffffffffffff81118282101715610322576103226102e9565b60405290565b604051601f8201601f1916810167ffffffffffffffff81118282101715610351576103516102e9565b604052919050565b6001600160a01b038116811461036e57600080fd5b50565b80356102e481610359565b60008060006060848603121561039157600080fd5b8335925060208085013567ffffffffffffffff808211156103b157600080fd5b81870191508282890312156103c557600080fd5b6103cd6102ff565b8235828111156103dc57600080fd5b80840193505088601f8401126103f157600080fd5b823582811115610403576104036102e9565b8060051b9250610414858401610328565b818152928401850192858101908b85111561042e57600080fd5b948601945b84861015610458578535925061044883610359565b8282529486019490860190610433565b83525090955061047093505050604086019050610371565b90509250925092565b8381526001600160a01b03838116602080840191909152606060408401819052845190840182905280516080850181905260009391830190849060a08701905b808310156104db578351851682529285019260019290920191908501906104b9565b509998505050505050505050565b60006001820161050957634e487b7160e01b600052601160045260246000fd5b506001019056fea26469706673582212202717150e5874858073e8abcd495d81031fcacb636c4f74ab84c6a3a7e435b10c64736f6c63430008140033",
     "sourceMap": "517:1967:62:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1824:658;;;;;;:::i;:::-;;:::i;:::-;;;-1:-1:-1;;;;;2628:32:69;;;2610:51;;2598:2;2583:18;1824:658:62;;;;;;;845:50;;;;;988:55;;;;;1824:658;1995:19;2110:45;2131:22;2110:12;:45::i;:::-;2193:66;;-1:-1:-1;;;2193:66:62;;2088:68;;-1:-1:-1;;;;;;2193:19:62;;;;;:66;;2213:10;;2225;;2237:21;;2193:66;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2343:17;-1:-1:-1;;;;;2343:29:62;;2381:4;2390:6;;2388:8;;;;;:::i;:::-;;;;;-1:-1:-1;2343:54:62;;-1:-1:-1;;;;;;2343:54:62;;;;;;;-1:-1:-1;;;;;4319:32:69;;;2343:54:62;;;4301:51:69;4368:18;;;4361:34;4274:18;;2343:54:62;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;2413:62:62;;;4679:25:69;;;-1:-1:-1;;;;;4778:15:69;;;4773:2;4758:18;;4751:43;4830:15;;4810:18;;;4803:43;2464:10:62;4877:2:69;4862:18;;4855:43;2413:62:62;;;;-1:-1:-1;2413:62:62;;;;4666:3:69;2413:62:62;;-1:-1:-1;2413:62:62;1824:658;;;;;:::o;973:759:57:-;1030:16;1362:48;1344:14;1338:4;1334:25;1328:4;1324:36;1321:90;1315:4;1308:104;1569:32;1552:14;1546:4;1542:25;1539:63;1533:4;1526:77;1644:4;1638;1635:1;1628:21;1616:33;-1:-1:-1;;;;;;1676:22:57;;1668:57;;;;-1:-1:-1;;;1668:57:57;;5111:2:69;1668:57:57;;;5093:21:69;5150:2;5130:18;;;5123:30;-1:-1:-1;;;5169:18:69;;;5162:52;5231:18;;1668:57:57;;;;;;;;973:759;;;:::o;14:127:69:-;75:10;70:3;66:20;63:1;56:31;106:4;103:1;96:15;130:4;127:1;120:15;146:251;218:2;212:9;260:2;248:15;;293:18;278:34;;314:22;;;275:62;272:88;;;340:18;;:::i;:::-;376:2;369:22;146:251;:::o;402:275::-;473:2;467:9;538:2;519:13;;-1:-1:-1;;515:27:69;503:40;;573:18;558:34;;594:22;;;555:62;552:88;;;620:18;;:::i;:::-;656:2;649:22;402:275;;-1:-1:-1;402:275:69:o;682:131::-;-1:-1:-1;;;;;757:31:69;;747:42;;737:70;;803:1;800;793:12;737:70;682:131;:::o;818:148::-;900:20;;929:31;900:20;929:31;:::i;971:1468::-;1109:6;1117;1125;1178:2;1166:9;1157:7;1153:23;1149:32;1146:52;;;1194:1;1191;1184:12;1146:52;1230:9;1217:23;1207:33;;1259:2;1312;1301:9;1297:18;1284:32;1335:18;1376:2;1368:6;1365:14;1362:34;;;1392:1;1389;1382:12;1362:34;1430:6;1419:9;1415:22;1405:32;;1471:2;1466;1457:7;1453:16;1449:25;1446:45;;;1487:1;1484;1477:12;1446:45;1513:22;;:::i;:::-;1573:2;1560:16;1601:2;1591:8;1588:16;1585:36;;;1617:1;1614;1607:12;1585:36;1648:8;1644:2;1640:17;1630:27;;;1695:7;1688:4;1684:2;1680:13;1676:27;1666:55;;1717:1;1714;1707:12;1666:55;1753:2;1740:16;1775:2;1771;1768:10;1765:36;;;1781:18;;:::i;:::-;1827:2;1824:1;1820:10;1810:20;;1850:28;1874:2;1870;1866:11;1850:28;:::i;:::-;1912:15;;;1982:11;;;1978:20;;;1943:12;;;;2010:19;;;2007:39;;;2042:1;2039;2032:12;2007:39;2066:11;;;;2086:223;2102:6;2097:3;2094:15;2086:223;;;2184:3;2171:17;2156:32;;2201:33;2226:7;2201:33;:::i;:::-;2247:20;;;2119:12;;;;2287;;;;2086:223;;;2318:20;;-1:-1:-1;2325:5:69;;-1:-1:-1;2381:52:69;;-1:-1:-1;;;2429:2:69;2414:18;;;-1:-1:-1;2381:52:69;:::i;:::-;2371:62;;971:1468;;;;;:::o;2910:975::-;3177:25;;;-1:-1:-1;;;;;3297:15:69;;;3221:2;3277:18;;;3270:43;;;;3349:2;3344;3329:18;;3322:30;;;3423:13;;3452:18;;;3445:30;;;3524:19;;3390:3;3375:19;;3552:22;;;3158:4;;3242:19;3632:21;;;3158:4;;3250:3;3590:19;;;3681:178;3695:6;3692:1;3689:13;3681:178;;;3760:13;;3756:22;;3744:35;;3834:15;;;;3717:1;3710:9;;;;;3799:12;;;;3681:178;;;-1:-1:-1;3876:3:69;2910:975;-1:-1:-1;;;;;;;;;2910:975:69:o;3890:232::-;3929:3;3950:17;;;3947:140;;4009:10;4004:3;4000:20;3997:1;3990:31;4044:4;4041:1;4034:15;4072:4;4069:1;4062:15;3947:140;-1:-1:-1;4114:1:69;4103:13;;3890:232::o",
     "linkReferences": {},
     "immutableReferences": {
-      "29622": [
+      "29726": [
         {
           "start": 122,
           "length": 32
@@ -130,7 +130,7 @@
           "length": 32
         }
       ],
-      "29626": [
+      "29730": [
         {
           "start": 161,
           "length": 32
@@ -147,7 +147,7 @@
     "delegatesRegistry()": "d574ff04",
     "deployDelegateFor(uint256,(address[]),address)": "a25f53be"
   },
-  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract MyDelegate\",\"name\":\"_delegateImplementation\",\"type\":\"address\"},{\"internalType\":\"contract IJBDelegatesRegistry\",\"name\":\"_delegatesRegistry\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"projectId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"contract MyDelegate\",\"name\":\"delegate\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"contract IJBDirectory\",\"name\":\"directory\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"caller\",\"type\":\"address\"}],\"name\":\"DelegateDeployed\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"delegateImplementation\",\"outputs\":[{\"internalType\":\"contract MyDelegate\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"delegatesRegistry\",\"outputs\":[{\"internalType\":\"contract IJBDelegatesRegistry\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_projectId\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"address[]\",\"name\":\"allowList\",\"type\":\"address[]\"}],\"internalType\":\"struct DeployMyDelegateData\",\"name\":\"_deployMyDelegateData\",\"type\":\"tuple\"},{\"internalType\":\"contract IJBDirectory\",\"name\":\"_directory\",\"type\":\"address\"}],\"name\":\"deployDelegateFor\",\"outputs\":[{\"internalType\":\"contract MyDelegate\",\"name\":\"delegate\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"constructor\":{\"params\":{\"_delegateImplementation\":\"The delegate implementation that will be cloned.\",\"_delegatesRegistry\":\"A contract that stores references to delegate deployer contracts.\"}},\"deployDelegateFor(uint256,(address[]),address)\":{\"params\":{\"_deployMyDelegateData\":\"Data necessary to deploy the delegate.\",\"_directory\":\"The directory of terminals and controllers for projects.\",\"_projectId\":\"The ID of the project for which the delegate will be deployed.\"},\"returns\":{\"delegate\":\"The address of the newly deployed delegate.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"delegateImplementation()\":{\"notice\":\"An implementation of the Delegate being deployed.\"},\"delegatesRegistry()\":{\"notice\":\"A contract that stores references to deployer contracts of delegates.\"},\"deployDelegateFor(uint256,(address[]),address)\":{\"notice\":\"Deploys a delegate for the provided project.\"}},\"notice\":\"A contract that deploys a delegate contract.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/MyDelegateDeployer.sol\":\"MyDelegateDeployer\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@jbx-protocol/=node_modules/@jbx-protocol/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@paulrberg/=node_modules/@paulrberg/\",\":@prb/=node_modules/@prb/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":prb-math/=node_modules/prb-math/\"]},\"sources\":{\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/enums/JBBallotState.sol\":{\"keccak256\":\"0x891fcac63470398b3a11239da7feba6b07d640809fcefd2404303b823d7378f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e6adfceaf284b669a8c1cbcf2da7f18ab31a2d1066f9db8bc914349e7401de7\",\"dweb:/ipfs/QmXLHVRPPZdXUkgAHQbHUtEzAvCJk1P6rJ7wrwfTcfW6fw\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBDirectory.sol\":{\"keccak256\":\"0x715321646db00514d1355ed43c40cd3f01e94959552fd07797b315d9c49cdb1d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c34c9e1c727ffc63dd42fb6e6ffb3116c8ba15d6a322a300f10f29478974768d\",\"dweb:/ipfs/QmYToaGrbMyyWAuyepYcDd8M6KcmosY8AWhT3uJmPM6Pvy\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBFundingCycleBallot.sol\":{\"keccak256\":\"0x49553a56209237846bc400cf27f260824a6bd06fd8094a7eb5abb9de75779598\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://559372746f94f28b385bc336df263f583dca5377350645c0b28110b083bdb41a\",\"dweb:/ipfs/QmeQRYqPjXBQCtMKXSFtHVD2ewEPoUAPDxLh4oWTRSKbmx\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBFundingCycleDataSource.sol\":{\"keccak256\":\"0xa424abc146a61b69db83e511c064492da6fab6d8226e13d1580bc9fbc50d6738\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://59c695ee79b9cd5447b83acb07c92627d747c6e6901e9145671c7ff12602f4c8\",\"dweb:/ipfs/Qma43bK5qkRkcWP9KNwfZ54WuMJsT2TAYfMXkdT1R7vRoK\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBFundingCycleStore.sol\":{\"keccak256\":\"0xaead823851433be0c2ddc8f8086813e6cd647de3a1bc0f7570a5d6b38c378b5a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7f11fd52ba9ef67b40811d8a2298ae8b69447d2565b3f1069cbb8f0f13bc65e7\",\"dweb:/ipfs/QmVbBzpTxZWar9xvj6x1vW91hJDv2iPVq7aG6waMxaHUPQ\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBPayDelegate.sol\":{\"keccak256\":\"0xa797de18b69eceba117e1f0b3810cf3cc2d2791417d580a5bdc510d1b868ab26\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://36b214c091c62c54d22cbedb606c29919cb56f1c29acf9c397c948247a29dcc0\",\"dweb:/ipfs/QmSzxHs8xNFqNfxZb1igvPHk7vXA5vUsGQ6AMfJ8jx8Ktu\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBPaymentTerminal.sol\":{\"keccak256\":\"0xb7826f5ed609359ce322c09e83236c47ba385df1c3cad3607e56fd0a2e00eee2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cbb0de0e73f73a04fcfc8f08cab3588b6d608cf5268af737cff6a530f6062c95\",\"dweb:/ipfs/QmPGb8aEbZNHNnrCvuGH52RLvV3kjL3agxQiFrjHoLHaup\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBProjects.sol\":{\"keccak256\":\"0x7cfc021d0bd7e73b1ba8f4845d7d35e3419d6a14d3d25ca3a8010e7f91062fe4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ff265e13e60da56b93104260ed69ab01153437ec2af9d453781f22ca295eaef9\",\"dweb:/ipfs/QmfGCSLX2Wy26ojf4U12udsdtjSSacbLcZGwCjTw7MjWF8\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBRedemptionDelegate.sol\":{\"keccak256\":\"0x172d2c0be65e72e54f71ae521907067f0fa30e8ca05c4f88826903208aa437e2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://266a32bd8feea10051a4e243e14692c62e99de7048cda2f541998b4cc64cbd51\",\"dweb:/ipfs/QmPfqsbSZdpQee4WbisK9ZnZRrXbUVvSpbfnrEKGfjzz9N\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBTokenUriResolver.sol\":{\"keccak256\":\"0xd267fd8ca7c21c2c71794acdb9a98314c33a35fc559e0bf0897a6686d196d174\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aa7053d4300ed1374f3f993e6e2163d0a05ee780e4e99eb007b55eabc93c724e\",\"dweb:/ipfs/QmYZAUn7VCwqpDWYZNCXLNYMRQpD334YgPRiGCfxQApzuT\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBDidPayData.sol\":{\"keccak256\":\"0xf3c664309b37790f16047ae97b0459889ae0242dfcde7fc8902c8d10c7f8e6b6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ea74b762604ffa0e45181d8ec31b130198546014f6360d15076af79952bc5874\",\"dweb:/ipfs/QmdukMbucvU75BpK4TsYKoqjpQ2Nhs9yjFVzcKGkG3SpSV\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBDidRedeemData.sol\":{\"keccak256\":\"0xe2c401f39723a7ce915b8bef328744c66daaf57460843964b941456c2258a412\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c3bddd802ff895aa54f047d2385c7c253f9e0cd5b23d4d84439c1590e7e66ccb\",\"dweb:/ipfs/QmXdSDWgEWMtJDqMhHrBCZnBM4qETXRPteB1wEGZBRxuUb\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBFundingCycle.sol\":{\"keccak256\":\"0xcdd3ac9b6fa67e62ada88d09b73bc35ade1cd77d43db712289266a788928b4c2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8ba0be407022bbeb0e9272884653209ee262b8a4e00ffbba1298c3b119feccba\",\"dweb:/ipfs/QmbtLQzSN3hut4jYVsYPiYDfRkDdGkZmTWBnV2wJKrdM3K\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBFundingCycleData.sol\":{\"keccak256\":\"0x2aa6368bf4dfc5797e8b02a978293de0c777fae2658de2c825a103587240f3b0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d7a980ab9b67ad1569d4407b747903cab668a332214117f5ad44feb50af0a3a\",\"dweb:/ipfs/QmSuEzmrmDSihrTKYCk8miq7VQi7WD6jmQePkjDyzt7UpC\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBPayDelegateAllocation.sol\":{\"keccak256\":\"0xb4e558dc62231d89e9b48998012577d22c3e52b58e23401f22d9096827f6ea0c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b6617a7479709d2a68fbc6686c9087fd7339ffcbb4823010287eb2ad979f23dd\",\"dweb:/ipfs/QmVT66SXpY9h5sD8nJq7VALbfWdeHwUxAeBPymaHg1TMNM\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBPayParamsData.sol\":{\"keccak256\":\"0x05007b26feb5d9a026b883c6d734a341b5a49ef7b8215fb40507882e2c14e24d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://52ef2d3c61f06243aead9afcb043299f362ff9f7b259386a88c4454b429436c0\",\"dweb:/ipfs/QmVpCJ1NyBGBDgNQpmojhjPmqx2gryzopGLgawHE26mwPr\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBProjectMetadata.sol\":{\"keccak256\":\"0x90ad7b1014c0a9f945fe7a2efde9d5de41e40574fa27969070b1d2ff52033ea0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1fafc65a9fd74605b7d6c6f0a92b3237a8e3efdd160affb8c117bad00dcf9494\",\"dweb:/ipfs/QmQkcVt11WLqrxHVrcDCF6dNxzg2kKHEghAgSbfLF6CHkt\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedeemParamsData.sol\":{\"keccak256\":\"0x5065a824ebb34952f016c6dfa47e8a7ac28427b719470e74a41022c11ace7788\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0006b9aeb387a8866d9f619de374d7618159e6a25d562f2c8fca984e2a4b9fea\",\"dweb:/ipfs/QmUfWBMHx6CxN921vM5RktJTP5AYEA3v2xpnMX5LGubhBC\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedemptionDelegateAllocation.sol\":{\"keccak256\":\"0x10c29d33dd0d875a0d4692a2b9a9355c2ebf433cc06a9a60253d4366b60d4d31\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://76614755cf61b78b3d3263ddcbf7c7146986374e4cdf5cc2abb67c523d957142\",\"dweb:/ipfs/QmVNGDmTCcfYxgbA83yURstmAU7vtAtjTh9zNFRwKMmTH1\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBTokenAmount.sol\":{\"keccak256\":\"0x4a778e779ba257ba5638c5469e07a4d21b55a3128d56db5a0fdfacb1f3301c51\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fdb8302e06c5b4e1e91d204ed735d8d5db5bb3648200c144d7c545678010a44d\",\"dweb:/ipfs/QmTpffbt3FShkk8LDjsonVGnecbbNMUL8QHYQM7AFcMa54\"]},\"node_modules/@jbx-protocol/juice-delegates-registry/src/interfaces/IJBDelegatesRegistry.sol\":{\"keccak256\":\"0x5559fcd3983e7572b15d9a00d15c031aad22078f349760729893664bc2013c4c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fde585c6320af838560bfa4a6ecfd6c742859c73dac4a35dde3cd68a55121979\",\"dweb:/ipfs/QmSq7owwxRXBq4nghTwhMRJ6pPkxMXpsVHCCCeAWVf6cXw\"]},\"node_modules/@openzeppelin/contracts/proxy/Clones.sol\":{\"keccak256\":\"0x01f055f5c26ba25d7f83e9aa9ba877fbea4d0bf22227de046ea67494bc932999\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e1306add0c9388918d04c45f6acae3551f019ebf8a77e6cc1c0958316ce1c1eb\",\"dweb:/ipfs/QmR4KHkcfP65RfZtH8TcC7rSdCoWk2Dnog6fhzzjLad8Aa\"]},\"node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x5bce51e11f7d194b79ea59fe00c9e8de9fa2c5530124960f29a24d4c740a3266\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7e66dfde185df46104c11bc89d08fa0760737aa59a2b8546a656473d810a8ea4\",\"dweb:/ipfs/QmXvyqtXPaPss2PD7eqPoSao5Szm2n6UMoiG8TZZDjmChR\"]},\"node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"src/MyDelegate.sol\":{\"keccak256\":\"0x7cd6f37d1c25d7c6255ebc066f7739719fb3b0186e18dd1d0ee1a60112c208c7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2953d35cc653b4d1335bd3aa1f7c332cec1fc507e5f4e1cde536c0a7669034d0\",\"dweb:/ipfs/QmeWSiJgrVPAPBZhr3izDUiLoquuLaePxqqEhihnaos66F\"]},\"src/MyDelegateDeployer.sol\":{\"keccak256\":\"0xe070f46f9298153a601090a69bad7e7506229ad5d40c28bb8532e6391b582c26\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6927d328ac845e8ce5e63a9e9cd4667c5bc38ce38c967bfc63816dd6367d1566\",\"dweb:/ipfs/QmRmSLLJW43FbQNENHFzzQT9FQ2yH2D4nWnWAjpwSE36Eo\"]},\"src/structs/DeployMyDelegateData.sol\":{\"keccak256\":\"0xc5db2ff539e38ede6c47ea67f93d2cd62106ca0ed47344e0b6607ac1c3e0bd91\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1deedc5799b0683792bb3fbf87b35f9577e72763a0ceab28b7617e7dab416e9b\",\"dweb:/ipfs/Qmcg5FJck4twgKvrfmBd1br3Aqo9EsdX8TeTTJWq4shRct\"]}},\"version\":1}",
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract MyDelegate\",\"name\":\"_delegateImplementation\",\"type\":\"address\"},{\"internalType\":\"contract IJBDelegatesRegistry\",\"name\":\"_delegatesRegistry\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"projectId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"contract MyDelegate\",\"name\":\"delegate\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"contract IJBDirectory\",\"name\":\"directory\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"caller\",\"type\":\"address\"}],\"name\":\"DelegateDeployed\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"delegateImplementation\",\"outputs\":[{\"internalType\":\"contract MyDelegate\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"delegatesRegistry\",\"outputs\":[{\"internalType\":\"contract IJBDelegatesRegistry\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_projectId\",\"type\":\"uint256\"},{\"components\":[{\"internalType\":\"address[]\",\"name\":\"allowList\",\"type\":\"address[]\"}],\"internalType\":\"struct DeployMyDelegateData\",\"name\":\"_deployMyDelegateData\",\"type\":\"tuple\"},{\"internalType\":\"contract IJBDirectory\",\"name\":\"_directory\",\"type\":\"address\"}],\"name\":\"deployDelegateFor\",\"outputs\":[{\"internalType\":\"contract MyDelegate\",\"name\":\"delegate\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"constructor\":{\"params\":{\"_delegateImplementation\":\"The delegate implementation that will be cloned.\",\"_delegatesRegistry\":\"A contract that stores references to delegate deployer contracts.\"}},\"deployDelegateFor(uint256,(address[]),address)\":{\"params\":{\"_deployMyDelegateData\":\"Data necessary to deploy the delegate.\",\"_directory\":\"The directory of terminals and controllers for projects.\",\"_projectId\":\"The ID of the project for which the delegate will be deployed.\"},\"returns\":{\"delegate\":\"The address of the newly deployed delegate.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"delegateImplementation()\":{\"notice\":\"An implementation of the Delegate being deployed.\"},\"delegatesRegistry()\":{\"notice\":\"A contract that stores references to deployer contracts of delegates.\"},\"deployDelegateFor(uint256,(address[]),address)\":{\"notice\":\"Deploys a delegate for the provided project.\"}},\"notice\":\"A contract that deploys a delegate contract.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/MyDelegateDeployer.sol\":\"MyDelegateDeployer\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@jbx-protocol/=node_modules/@jbx-protocol/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@paulrberg/=node_modules/@paulrberg/\",\":@prb/=node_modules/@prb/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":prb-math/=node_modules/prb-math/\"]},\"sources\":{\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/enums/JBBallotState.sol\":{\"keccak256\":\"0x891fcac63470398b3a11239da7feba6b07d640809fcefd2404303b823d7378f8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e6adfceaf284b669a8c1cbcf2da7f18ab31a2d1066f9db8bc914349e7401de7\",\"dweb:/ipfs/QmXLHVRPPZdXUkgAHQbHUtEzAvCJk1P6rJ7wrwfTcfW6fw\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBDirectory.sol\":{\"keccak256\":\"0x715321646db00514d1355ed43c40cd3f01e94959552fd07797b315d9c49cdb1d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c34c9e1c727ffc63dd42fb6e6ffb3116c8ba15d6a322a300f10f29478974768d\",\"dweb:/ipfs/QmYToaGrbMyyWAuyepYcDd8M6KcmosY8AWhT3uJmPM6Pvy\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBFundingCycleBallot.sol\":{\"keccak256\":\"0x49553a56209237846bc400cf27f260824a6bd06fd8094a7eb5abb9de75779598\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://559372746f94f28b385bc336df263f583dca5377350645c0b28110b083bdb41a\",\"dweb:/ipfs/QmeQRYqPjXBQCtMKXSFtHVD2ewEPoUAPDxLh4oWTRSKbmx\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBFundingCycleDataSource.sol\":{\"keccak256\":\"0xa424abc146a61b69db83e511c064492da6fab6d8226e13d1580bc9fbc50d6738\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://59c695ee79b9cd5447b83acb07c92627d747c6e6901e9145671c7ff12602f4c8\",\"dweb:/ipfs/Qma43bK5qkRkcWP9KNwfZ54WuMJsT2TAYfMXkdT1R7vRoK\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBFundingCycleStore.sol\":{\"keccak256\":\"0xaead823851433be0c2ddc8f8086813e6cd647de3a1bc0f7570a5d6b38c378b5a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7f11fd52ba9ef67b40811d8a2298ae8b69447d2565b3f1069cbb8f0f13bc65e7\",\"dweb:/ipfs/QmVbBzpTxZWar9xvj6x1vW91hJDv2iPVq7aG6waMxaHUPQ\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBPayDelegate.sol\":{\"keccak256\":\"0xa797de18b69eceba117e1f0b3810cf3cc2d2791417d580a5bdc510d1b868ab26\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://36b214c091c62c54d22cbedb606c29919cb56f1c29acf9c397c948247a29dcc0\",\"dweb:/ipfs/QmSzxHs8xNFqNfxZb1igvPHk7vXA5vUsGQ6AMfJ8jx8Ktu\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBPaymentTerminal.sol\":{\"keccak256\":\"0xb7826f5ed609359ce322c09e83236c47ba385df1c3cad3607e56fd0a2e00eee2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cbb0de0e73f73a04fcfc8f08cab3588b6d608cf5268af737cff6a530f6062c95\",\"dweb:/ipfs/QmPGb8aEbZNHNnrCvuGH52RLvV3kjL3agxQiFrjHoLHaup\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBProjects.sol\":{\"keccak256\":\"0x7cfc021d0bd7e73b1ba8f4845d7d35e3419d6a14d3d25ca3a8010e7f91062fe4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ff265e13e60da56b93104260ed69ab01153437ec2af9d453781f22ca295eaef9\",\"dweb:/ipfs/QmfGCSLX2Wy26ojf4U12udsdtjSSacbLcZGwCjTw7MjWF8\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBRedemptionDelegate.sol\":{\"keccak256\":\"0x172d2c0be65e72e54f71ae521907067f0fa30e8ca05c4f88826903208aa437e2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://266a32bd8feea10051a4e243e14692c62e99de7048cda2f541998b4cc64cbd51\",\"dweb:/ipfs/QmPfqsbSZdpQee4WbisK9ZnZRrXbUVvSpbfnrEKGfjzz9N\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBTokenUriResolver.sol\":{\"keccak256\":\"0xd267fd8ca7c21c2c71794acdb9a98314c33a35fc559e0bf0897a6686d196d174\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aa7053d4300ed1374f3f993e6e2163d0a05ee780e4e99eb007b55eabc93c724e\",\"dweb:/ipfs/QmYZAUn7VCwqpDWYZNCXLNYMRQpD334YgPRiGCfxQApzuT\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBDidPayData.sol\":{\"keccak256\":\"0xf3c664309b37790f16047ae97b0459889ae0242dfcde7fc8902c8d10c7f8e6b6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ea74b762604ffa0e45181d8ec31b130198546014f6360d15076af79952bc5874\",\"dweb:/ipfs/QmdukMbucvU75BpK4TsYKoqjpQ2Nhs9yjFVzcKGkG3SpSV\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBDidRedeemData.sol\":{\"keccak256\":\"0xe2c401f39723a7ce915b8bef328744c66daaf57460843964b941456c2258a412\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c3bddd802ff895aa54f047d2385c7c253f9e0cd5b23d4d84439c1590e7e66ccb\",\"dweb:/ipfs/QmXdSDWgEWMtJDqMhHrBCZnBM4qETXRPteB1wEGZBRxuUb\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBFundingCycle.sol\":{\"keccak256\":\"0xcdd3ac9b6fa67e62ada88d09b73bc35ade1cd77d43db712289266a788928b4c2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8ba0be407022bbeb0e9272884653209ee262b8a4e00ffbba1298c3b119feccba\",\"dweb:/ipfs/QmbtLQzSN3hut4jYVsYPiYDfRkDdGkZmTWBnV2wJKrdM3K\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBFundingCycleData.sol\":{\"keccak256\":\"0x2aa6368bf4dfc5797e8b02a978293de0c777fae2658de2c825a103587240f3b0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d7a980ab9b67ad1569d4407b747903cab668a332214117f5ad44feb50af0a3a\",\"dweb:/ipfs/QmSuEzmrmDSihrTKYCk8miq7VQi7WD6jmQePkjDyzt7UpC\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBPayDelegateAllocation.sol\":{\"keccak256\":\"0xb4e558dc62231d89e9b48998012577d22c3e52b58e23401f22d9096827f6ea0c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b6617a7479709d2a68fbc6686c9087fd7339ffcbb4823010287eb2ad979f23dd\",\"dweb:/ipfs/QmVT66SXpY9h5sD8nJq7VALbfWdeHwUxAeBPymaHg1TMNM\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBPayParamsData.sol\":{\"keccak256\":\"0x05007b26feb5d9a026b883c6d734a341b5a49ef7b8215fb40507882e2c14e24d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://52ef2d3c61f06243aead9afcb043299f362ff9f7b259386a88c4454b429436c0\",\"dweb:/ipfs/QmVpCJ1NyBGBDgNQpmojhjPmqx2gryzopGLgawHE26mwPr\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBProjectMetadata.sol\":{\"keccak256\":\"0x90ad7b1014c0a9f945fe7a2efde9d5de41e40574fa27969070b1d2ff52033ea0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1fafc65a9fd74605b7d6c6f0a92b3237a8e3efdd160affb8c117bad00dcf9494\",\"dweb:/ipfs/QmQkcVt11WLqrxHVrcDCF6dNxzg2kKHEghAgSbfLF6CHkt\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedeemParamsData.sol\":{\"keccak256\":\"0x5065a824ebb34952f016c6dfa47e8a7ac28427b719470e74a41022c11ace7788\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0006b9aeb387a8866d9f619de374d7618159e6a25d562f2c8fca984e2a4b9fea\",\"dweb:/ipfs/QmUfWBMHx6CxN921vM5RktJTP5AYEA3v2xpnMX5LGubhBC\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedemptionDelegateAllocation.sol\":{\"keccak256\":\"0x10c29d33dd0d875a0d4692a2b9a9355c2ebf433cc06a9a60253d4366b60d4d31\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://76614755cf61b78b3d3263ddcbf7c7146986374e4cdf5cc2abb67c523d957142\",\"dweb:/ipfs/QmVNGDmTCcfYxgbA83yURstmAU7vtAtjTh9zNFRwKMmTH1\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBTokenAmount.sol\":{\"keccak256\":\"0x4a778e779ba257ba5638c5469e07a4d21b55a3128d56db5a0fdfacb1f3301c51\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fdb8302e06c5b4e1e91d204ed735d8d5db5bb3648200c144d7c545678010a44d\",\"dweb:/ipfs/QmTpffbt3FShkk8LDjsonVGnecbbNMUL8QHYQM7AFcMa54\"]},\"node_modules/@jbx-protocol/juice-delegates-registry/src/interfaces/IJBDelegatesRegistry.sol\":{\"keccak256\":\"0x5559fcd3983e7572b15d9a00d15c031aad22078f349760729893664bc2013c4c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fde585c6320af838560bfa4a6ecfd6c742859c73dac4a35dde3cd68a55121979\",\"dweb:/ipfs/QmSq7owwxRXBq4nghTwhMRJ6pPkxMXpsVHCCCeAWVf6cXw\"]},\"node_modules/@openzeppelin/contracts/proxy/Clones.sol\":{\"keccak256\":\"0x01f055f5c26ba25d7f83e9aa9ba877fbea4d0bf22227de046ea67494bc932999\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e1306add0c9388918d04c45f6acae3551f019ebf8a77e6cc1c0958316ce1c1eb\",\"dweb:/ipfs/QmR4KHkcfP65RfZtH8TcC7rSdCoWk2Dnog6fhzzjLad8Aa\"]},\"node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x5bce51e11f7d194b79ea59fe00c9e8de9fa2c5530124960f29a24d4c740a3266\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7e66dfde185df46104c11bc89d08fa0760737aa59a2b8546a656473d810a8ea4\",\"dweb:/ipfs/QmXvyqtXPaPss2PD7eqPoSao5Szm2n6UMoiG8TZZDjmChR\"]},\"node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"src/MyDelegate.sol\":{\"keccak256\":\"0xb6d2d7985a3ae09afc81e58d0876ab5fbc7e65cad8c915983da3bc7ccf85a885\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8ffb48983a1bb4b70a37e16616cf5f4236dab7e86d61c38509c886861da7b2de\",\"dweb:/ipfs/QmXnbJWWSfkvXb7Abm9WJmDz3g5hZKAwic4woTAAtwQVQx\"]},\"src/MyDelegateDeployer.sol\":{\"keccak256\":\"0xe070f46f9298153a601090a69bad7e7506229ad5d40c28bb8532e6391b582c26\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6927d328ac845e8ce5e63a9e9cd4667c5bc38ce38c967bfc63816dd6367d1566\",\"dweb:/ipfs/QmRmSLLJW43FbQNENHFzzQT9FQ2yH2D4nWnWAjpwSE36Eo\"]},\"src/structs/DeployMyDelegateData.sol\":{\"keccak256\":\"0xc5db2ff539e38ede6c47ea67f93d2cd62106ca0ed47344e0b6607ac1c3e0bd91\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1deedc5799b0683792bb3fbf87b35f9577e72763a0ceab28b7617e7dab416e9b\",\"dweb:/ipfs/Qmcg5FJck4twgKvrfmBd1br3Aqo9EsdX8TeTTJWq4shRct\"]}},\"version\":1}",
   "metadata": {
     "compiler": {
       "version": "0.8.20+commit.a1b79de6"
@@ -519,10 +519,10 @@
         "license": "MIT"
       },
       "src/MyDelegate.sol": {
-        "keccak256": "0x7cd6f37d1c25d7c6255ebc066f7739719fb3b0186e18dd1d0ee1a60112c208c7",
+        "keccak256": "0xb6d2d7985a3ae09afc81e58d0876ab5fbc7e65cad8c915983da3bc7ccf85a885",
         "urls": [
-          "bzz-raw://2953d35cc653b4d1335bd3aa1f7c332cec1fc507e5f4e1cde536c0a7669034d0",
-          "dweb:/ipfs/QmeWSiJgrVPAPBZhr3izDUiLoquuLaePxqqEhihnaos66F"
+          "bzz-raw://8ffb48983a1bb4b70a37e16616cf5f4236dab7e86d61c38509c886861da7b2de",
+          "dweb:/ipfs/QmXnbJWWSfkvXb7Abm9WJmDz3g5hZKAwic4woTAAtwQVQx"
         ],
         "license": "MIT"
       },
@@ -547,13 +547,13 @@
   },
   "ast": {
     "absolutePath": "src/MyDelegateDeployer.sol",
-    "id": 29702,
+    "id": 29806,
     "exportedSymbols": {
       "Clones": [
         28911
       ],
       "DeployMyDelegateData": [
-        30177
+        30281
       ],
       "IJBDelegatesRegistry": [
         28831
@@ -562,17 +562,17 @@
         27586
       ],
       "MyDelegate": [
-        29590
+        29694
       ],
       "MyDelegateDeployer": [
-        29701
+        29805
       ]
     },
     "nodeType": "SourceUnit",
     "src": "32:2453:62",
     "nodes": [
       {
-        "id": 29592,
+        "id": 29696,
         "nodeType": "PragmaDirective",
         "src": "32:24:62",
         "nodes": [],
@@ -584,19 +584,19 @@
         ]
       },
       {
-        "id": 29594,
+        "id": 29698,
         "nodeType": "ImportDirective",
         "src": "58:64:62",
         "nodes": [],
         "absolutePath": "node_modules/@openzeppelin/contracts/proxy/Clones.sol",
         "file": "@openzeppelin/contracts/proxy/Clones.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29702,
+        "scope": 29806,
         "sourceUnit": 28912,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29593,
+              "id": 29697,
               "name": "Clones",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -610,19 +610,19 @@
         "unitAlias": ""
       },
       {
-        "id": 29596,
+        "id": 29700,
         "nodeType": "ImportDirective",
         "src": "123:116:62",
         "nodes": [],
         "absolutePath": "node_modules/@jbx-protocol/juice-delegates-registry/src/interfaces/IJBDelegatesRegistry.sol",
         "file": "@jbx-protocol/juice-delegates-registry/src/interfaces/IJBDelegatesRegistry.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29702,
+        "scope": 29806,
         "sourceUnit": 28832,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29595,
+              "id": 29699,
               "name": "IJBDelegatesRegistry",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -636,19 +636,19 @@
         "unitAlias": ""
       },
       {
-        "id": 29598,
+        "id": 29702,
         "nodeType": "ImportDirective",
         "src": "240:100:62",
         "nodes": [],
         "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBDirectory.sol",
         "file": "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBDirectory.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29702,
+        "scope": 29806,
         "sourceUnit": 27587,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29597,
+              "id": 29701,
               "name": "IJBDirectory",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
@@ -662,23 +662,23 @@
         "unitAlias": ""
       },
       {
-        "id": 29600,
+        "id": 29704,
         "nodeType": "ImportDirective",
         "src": "341:72:62",
         "nodes": [],
         "absolutePath": "src/structs/DeployMyDelegateData.sol",
         "file": "./structs/DeployMyDelegateData.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29702,
-        "sourceUnit": 30178,
+        "scope": 29806,
+        "sourceUnit": 30282,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29599,
+              "id": 29703,
               "name": "DeployMyDelegateData",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 30177,
+              "referencedDeclaration": 30281,
               "src": "349:20:62",
               "typeDescriptions": {}
             },
@@ -688,23 +688,23 @@
         "unitAlias": ""
       },
       {
-        "id": 29602,
+        "id": 29706,
         "nodeType": "ImportDirective",
         "src": "414:44:62",
         "nodes": [],
         "absolutePath": "src/MyDelegate.sol",
         "file": "./MyDelegate.sol",
         "nameLocation": "-1:-1:-1",
-        "scope": 29702,
-        "sourceUnit": 29591,
+        "scope": 29806,
+        "sourceUnit": 29695,
         "symbolAliases": [
           {
             "foreign": {
-              "id": 29601,
+              "id": 29705,
               "name": "MyDelegate",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 29590,
+              "referencedDeclaration": 29694,
               "src": "422:10:62",
               "typeDescriptions": {}
             },
@@ -714,12 +714,12 @@
         "unitAlias": ""
       },
       {
-        "id": 29701,
+        "id": 29805,
         "nodeType": "ContractDefinition",
         "src": "517:1967:62",
         "nodes": [
           {
-            "id": 29615,
+            "id": 29719,
             "nodeType": "EventDefinition",
             "src": "551:103:62",
             "nodes": [],
@@ -728,18 +728,18 @@
             "name": "DelegateDeployed",
             "nameLocation": "557:16:62",
             "parameters": {
-              "id": 29614,
+              "id": 29718,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29605,
+                  "id": 29709,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "projectId",
                   "nameLocation": "582:9:62",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29615,
+                  "scope": 29719,
                   "src": "574:17:62",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -748,7 +748,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 29604,
+                    "id": 29708,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "574:7:62",
@@ -761,37 +761,37 @@
                 },
                 {
                   "constant": false,
-                  "id": 29608,
+                  "id": 29712,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "delegate",
                   "nameLocation": "604:8:62",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29615,
+                  "scope": 29719,
                   "src": "593:19:62",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                    "typeIdentifier": "t_contract$_MyDelegate_$29694",
                     "typeString": "contract MyDelegate"
                   },
                   "typeName": {
-                    "id": 29607,
+                    "id": 29711,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 29606,
+                      "id": 29710,
                       "name": "MyDelegate",
                       "nameLocations": [
                         "593:10:62"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 29590,
+                      "referencedDeclaration": 29694,
                       "src": "593:10:62"
                     },
-                    "referencedDeclaration": 29590,
+                    "referencedDeclaration": 29694,
                     "src": "593:10:62",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                      "typeIdentifier": "t_contract$_MyDelegate_$29694",
                       "typeString": "contract MyDelegate"
                     }
                   },
@@ -799,13 +799,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 29611,
+                  "id": 29715,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "directory",
                   "nameLocation": "627:9:62",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29615,
+                  "scope": 29719,
                   "src": "614:22:62",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -814,10 +814,10 @@
                     "typeString": "contract IJBDirectory"
                   },
                   "typeName": {
-                    "id": 29610,
+                    "id": 29714,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 29609,
+                      "id": 29713,
                       "name": "IJBDirectory",
                       "nameLocations": [
                         "614:12:62"
@@ -837,13 +837,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 29613,
+                  "id": 29717,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "caller",
                   "nameLocation": "646:6:62",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29615,
+                  "scope": 29719,
                   "src": "638:14:62",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -852,7 +852,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 29612,
+                    "id": 29716,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "638:7:62",
@@ -869,13 +869,13 @@
             }
           },
           {
-            "id": 29618,
+            "id": 29722,
             "nodeType": "VariableDeclaration",
             "src": "749:23:62",
             "nodes": [],
             "constant": false,
             "documentation": {
-              "id": 29616,
+              "id": 29720,
               "nodeType": "StructuredDocumentation",
               "src": "660:84:62",
               "text": "@notice This contract's current nonce, used for the Juicebox delegates registry."
@@ -883,7 +883,7 @@
             "mutability": "mutable",
             "name": "_nonce",
             "nameLocation": "766:6:62",
-            "scope": 29701,
+            "scope": 29805,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -891,7 +891,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 29617,
+              "id": 29721,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "749:7:62",
@@ -903,13 +903,13 @@
             "visibility": "internal"
           },
           {
-            "id": 29622,
+            "id": 29726,
             "nodeType": "VariableDeclaration",
             "src": "845:50:62",
             "nodes": [],
             "constant": false,
             "documentation": {
-              "id": 29619,
+              "id": 29723,
               "nodeType": "StructuredDocumentation",
               "src": "779:61:62",
               "text": "@notice An implementation of the Delegate being deployed."
@@ -918,43 +918,43 @@
             "mutability": "immutable",
             "name": "delegateImplementation",
             "nameLocation": "873:22:62",
-            "scope": 29701,
+            "scope": 29805,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_MyDelegate_$29590",
+              "typeIdentifier": "t_contract$_MyDelegate_$29694",
               "typeString": "contract MyDelegate"
             },
             "typeName": {
-              "id": 29621,
+              "id": 29725,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 29620,
+                "id": 29724,
                 "name": "MyDelegate",
                 "nameLocations": [
                   "845:10:62"
                 ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 29590,
+                "referencedDeclaration": 29694,
                 "src": "845:10:62"
               },
-              "referencedDeclaration": 29590,
+              "referencedDeclaration": 29694,
               "src": "845:10:62",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                "typeIdentifier": "t_contract$_MyDelegate_$29694",
                 "typeString": "contract MyDelegate"
               }
             },
             "visibility": "public"
           },
           {
-            "id": 29626,
+            "id": 29730,
             "nodeType": "VariableDeclaration",
             "src": "988:55:62",
             "nodes": [],
             "constant": false,
             "documentation": {
-              "id": 29623,
+              "id": 29727,
               "nodeType": "StructuredDocumentation",
               "src": "902:81:62",
               "text": "@notice A contract that stores references to deployer contracts of delegates."
@@ -963,7 +963,7 @@
             "mutability": "immutable",
             "name": "delegatesRegistry",
             "nameLocation": "1026:17:62",
-            "scope": 29701,
+            "scope": 29805,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -971,10 +971,10 @@
               "typeString": "contract IJBDelegatesRegistry"
             },
             "typeName": {
-              "id": 29625,
+              "id": 29729,
               "nodeType": "UserDefinedTypeName",
               "pathNode": {
-                "id": 29624,
+                "id": 29728,
                 "name": "IJBDelegatesRegistry",
                 "nameLocations": [
                   "988:20:62"
@@ -993,72 +993,72 @@
             "visibility": "public"
           },
           {
-            "id": 29645,
+            "id": 29749,
             "nodeType": "FunctionDefinition",
             "src": "1238:202:62",
             "nodes": [],
             "body": {
-              "id": 29644,
+              "id": 29748,
               "nodeType": "Block",
               "src": "1327:113:62",
               "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 29638,
+                    "id": 29742,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 29636,
+                      "id": 29740,
                       "name": "delegateImplementation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 29622,
+                      "referencedDeclaration": 29726,
                       "src": "1337:22:62",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                        "typeIdentifier": "t_contract$_MyDelegate_$29694",
                         "typeString": "contract MyDelegate"
                       }
                     },
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 29637,
+                      "id": 29741,
                       "name": "_delegateImplementation",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 29630,
+                      "referencedDeclaration": 29734,
                       "src": "1362:23:62",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                        "typeIdentifier": "t_contract$_MyDelegate_$29694",
                         "typeString": "contract MyDelegate"
                       }
                     },
                     "src": "1337:48:62",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                      "typeIdentifier": "t_contract$_MyDelegate_$29694",
                       "typeString": "contract MyDelegate"
                     }
                   },
-                  "id": 29639,
+                  "id": 29743,
                   "nodeType": "ExpressionStatement",
                   "src": "1337:48:62"
                 },
                 {
                   "expression": {
-                    "id": 29642,
+                    "id": 29746,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 29640,
+                      "id": 29744,
                       "name": "delegatesRegistry",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 29626,
+                      "referencedDeclaration": 29730,
                       "src": "1395:17:62",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_IJBDelegatesRegistry_$28831",
@@ -1068,11 +1068,11 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 29641,
+                      "id": 29745,
                       "name": "_delegatesRegistry",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 29633,
+                      "referencedDeclaration": 29737,
                       "src": "1415:18:62",
                       "typeDescriptions": {
                         "typeIdentifier": "t_contract$_IJBDelegatesRegistry_$28831",
@@ -1085,14 +1085,14 @@
                       "typeString": "contract IJBDelegatesRegistry"
                     }
                   },
-                  "id": 29643,
+                  "id": 29747,
                   "nodeType": "ExpressionStatement",
                   "src": "1395:38:62"
                 }
               ]
             },
             "documentation": {
-              "id": 29627,
+              "id": 29731,
               "nodeType": "StructuredDocumentation",
               "src": "1050:183:62",
               "text": "@param _delegateImplementation The delegate implementation that will be cloned.\n @param _delegatesRegistry A contract that stores references to delegate deployer contracts."
@@ -1103,41 +1103,41 @@
             "name": "",
             "nameLocation": "-1:-1:-1",
             "parameters": {
-              "id": 29634,
+              "id": 29738,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29630,
+                  "id": 29734,
                   "mutability": "mutable",
                   "name": "_delegateImplementation",
                   "nameLocation": "1261:23:62",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29645,
+                  "scope": 29749,
                   "src": "1250:34:62",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                    "typeIdentifier": "t_contract$_MyDelegate_$29694",
                     "typeString": "contract MyDelegate"
                   },
                   "typeName": {
-                    "id": 29629,
+                    "id": 29733,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 29628,
+                      "id": 29732,
                       "name": "MyDelegate",
                       "nameLocations": [
                         "1250:10:62"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 29590,
+                      "referencedDeclaration": 29694,
                       "src": "1250:10:62"
                     },
-                    "referencedDeclaration": 29590,
+                    "referencedDeclaration": 29694,
                     "src": "1250:10:62",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                      "typeIdentifier": "t_contract$_MyDelegate_$29694",
                       "typeString": "contract MyDelegate"
                     }
                   },
@@ -1145,12 +1145,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 29633,
+                  "id": 29737,
                   "mutability": "mutable",
                   "name": "_delegatesRegistry",
                   "nameLocation": "1307:18:62",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29645,
+                  "scope": 29749,
                   "src": "1286:39:62",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1159,10 +1159,10 @@
                     "typeString": "contract IJBDelegatesRegistry"
                   },
                   "typeName": {
-                    "id": 29632,
+                    "id": 29736,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 29631,
+                      "id": 29735,
                       "name": "IJBDelegatesRegistry",
                       "nameLocations": [
                         "1286:20:62"
@@ -1184,43 +1184,43 @@
               "src": "1249:77:62"
             },
             "returnParameters": {
-              "id": 29635,
+              "id": 29739,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1327:0:62"
             },
-            "scope": 29701,
+            "scope": 29805,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 29700,
+            "id": 29804,
             "nodeType": "FunctionDefinition",
             "src": "1824:658:62",
             "nodes": [],
             "body": {
-              "id": 29699,
+              "id": 29803,
               "nodeType": "Block",
               "src": "2016:466:62",
               "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 29670,
+                    "id": 29774,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 29660,
+                      "id": 29764,
                       "name": "delegate",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 29658,
+                      "referencedDeclaration": 29762,
                       "src": "2088:8:62",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                        "typeIdentifier": "t_contract$_MyDelegate_$29694",
                         "typeString": "contract MyDelegate"
                       }
                     },
@@ -1233,14 +1233,14 @@
                             {
                               "arguments": [
                                 {
-                                  "id": 29666,
+                                  "id": 29770,
                                   "name": "delegateImplementation",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 29622,
+                                  "referencedDeclaration": 29726,
                                   "src": "2131:22:62",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                                    "typeIdentifier": "t_contract$_MyDelegate_$29694",
                                     "typeString": "contract MyDelegate"
                                   }
                                 }
@@ -1248,11 +1248,11 @@
                               "expression": {
                                 "argumentTypes": [
                                   {
-                                    "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                                    "typeIdentifier": "t_contract$_MyDelegate_$29694",
                                     "typeString": "contract MyDelegate"
                                   }
                                 ],
-                                "id": 29665,
+                                "id": 29769,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -1264,14 +1264,14 @@
                                   "typeString": "type(address)"
                                 },
                                 "typeName": {
-                                  "id": 29664,
+                                  "id": 29768,
                                   "name": "address",
                                   "nodeType": "ElementaryTypeName",
                                   "src": "2123:7:62",
                                   "typeDescriptions": {}
                                 }
                               },
-                              "id": 29667,
+                              "id": 29771,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1296,7 +1296,7 @@
                               }
                             ],
                             "expression": {
-                              "id": 29662,
+                              "id": 29766,
                               "name": "Clones",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -1307,7 +1307,7 @@
                                 "typeString": "type(library Clones)"
                               }
                             },
-                            "id": 29663,
+                            "id": 29767,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1322,7 +1322,7 @@
                               "typeString": "function (address) returns (address)"
                             }
                           },
-                          "id": 29668,
+                          "id": 29772,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1346,18 +1346,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 29661,
+                        "id": 29765,
                         "name": "MyDelegate",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 29590,
+                        "referencedDeclaration": 29694,
                         "src": "2099:10:62",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_MyDelegate_$29590_$",
+                          "typeIdentifier": "t_type$_t_contract$_MyDelegate_$29694_$",
                           "typeString": "type(contract MyDelegate)"
                         }
                       },
-                      "id": 29669,
+                      "id": 29773,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1369,17 +1369,17 @@
                       "src": "2099:57:62",
                       "tryCall": false,
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                        "typeIdentifier": "t_contract$_MyDelegate_$29694",
                         "typeString": "contract MyDelegate"
                       }
                     },
                     "src": "2088:68:62",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                      "typeIdentifier": "t_contract$_MyDelegate_$29694",
                       "typeString": "contract MyDelegate"
                     }
                   },
-                  "id": 29671,
+                  "id": 29775,
                   "nodeType": "ExpressionStatement",
                   "src": "2088:68:62"
                 },
@@ -1387,11 +1387,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 29675,
+                        "id": 29779,
                         "name": "_projectId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 29648,
+                        "referencedDeclaration": 29752,
                         "src": "2213:10:62",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1399,11 +1399,11 @@
                         }
                       },
                       {
-                        "id": 29676,
+                        "id": 29780,
                         "name": "_directory",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 29654,
+                        "referencedDeclaration": 29758,
                         "src": "2225:10:62",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_IJBDirectory_$27586",
@@ -1411,14 +1411,14 @@
                         }
                       },
                       {
-                        "id": 29677,
+                        "id": 29781,
                         "name": "_deployMyDelegateData",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 29651,
+                        "referencedDeclaration": 29755,
                         "src": "2237:21:62",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_DeployMyDelegateData_$30177_memory_ptr",
+                          "typeIdentifier": "t_struct$_DeployMyDelegateData_$30281_memory_ptr",
                           "typeString": "struct DeployMyDelegateData memory"
                         }
                       }
@@ -1434,23 +1434,23 @@
                           "typeString": "contract IJBDirectory"
                         },
                         {
-                          "typeIdentifier": "t_struct$_DeployMyDelegateData_$30177_memory_ptr",
+                          "typeIdentifier": "t_struct$_DeployMyDelegateData_$30281_memory_ptr",
                           "typeString": "struct DeployMyDelegateData memory"
                         }
                       ],
                       "expression": {
-                        "id": 29672,
+                        "id": 29776,
                         "name": "delegate",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 29658,
+                        "referencedDeclaration": 29762,
                         "src": "2193:8:62",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                          "typeIdentifier": "t_contract$_MyDelegate_$29694",
                           "typeString": "contract MyDelegate"
                         }
                       },
-                      "id": 29674,
+                      "id": 29778,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1458,14 +1458,14 @@
                       "memberLocation": "2202:10:62",
                       "memberName": "initialize",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 29502,
+                      "referencedDeclaration": 29545,
                       "src": "2193:19:62",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_contract$_IJBDirectory_$27586_$_t_struct$_DeployMyDelegateData_$30177_memory_ptr_$returns$__$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$_t_contract$_IJBDirectory_$27586_$_t_struct$_DeployMyDelegateData_$30281_memory_ptr_$returns$__$",
                         "typeString": "function (uint256,contract IJBDirectory,struct DeployMyDelegateData memory) external"
                       }
                     },
-                    "id": 29678,
+                    "id": 29782,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1481,7 +1481,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 29679,
+                  "id": 29783,
                   "nodeType": "ExpressionStatement",
                   "src": "2193:66:62"
                 },
@@ -1491,14 +1491,14 @@
                       {
                         "arguments": [
                           {
-                            "id": 29685,
+                            "id": 29789,
                             "name": "this",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": -28,
                             "src": "2381:4:62",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_contract$_MyDelegateDeployer_$29701",
+                              "typeIdentifier": "t_contract$_MyDelegateDeployer_$29805",
                               "typeString": "contract MyDelegateDeployer"
                             }
                           }
@@ -1506,11 +1506,11 @@
                         "expression": {
                           "argumentTypes": [
                             {
-                              "typeIdentifier": "t_contract$_MyDelegateDeployer_$29701",
+                              "typeIdentifier": "t_contract$_MyDelegateDeployer_$29805",
                               "typeString": "contract MyDelegateDeployer"
                             }
                           ],
-                          "id": 29684,
+                          "id": 29788,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1522,14 +1522,14 @@
                             "typeString": "type(address)"
                           },
                           "typeName": {
-                            "id": 29683,
+                            "id": 29787,
                             "name": "address",
                             "nodeType": "ElementaryTypeName",
                             "src": "2373:7:62",
                             "typeDescriptions": {}
                           }
                         },
-                        "id": 29686,
+                        "id": 29790,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1546,7 +1546,7 @@
                         }
                       },
                       {
-                        "id": 29688,
+                        "id": 29792,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1556,11 +1556,11 @@
                         "prefix": true,
                         "src": "2388:8:62",
                         "subExpression": {
-                          "id": 29687,
+                          "id": 29791,
                           "name": "_nonce",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 29618,
+                          "referencedDeclaration": 29722,
                           "src": "2390:6:62",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -1585,18 +1585,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 29680,
+                        "id": 29784,
                         "name": "delegatesRegistry",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 29626,
+                        "referencedDeclaration": 29730,
                         "src": "2343:17:62",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_IJBDelegatesRegistry_$28831",
                           "typeString": "contract IJBDelegatesRegistry"
                         }
                       },
-                      "id": 29682,
+                      "id": 29786,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1611,7 +1611,7 @@
                         "typeString": "function (address,uint256) external"
                       }
                     },
-                    "id": 29689,
+                    "id": 29793,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1627,7 +1627,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 29690,
+                  "id": 29794,
                   "nodeType": "ExpressionStatement",
                   "src": "2343:54:62"
                 },
@@ -1635,11 +1635,11 @@
                   "eventCall": {
                     "arguments": [
                       {
-                        "id": 29692,
+                        "id": 29796,
                         "name": "_projectId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 29648,
+                        "referencedDeclaration": 29752,
                         "src": "2430:10:62",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1647,23 +1647,23 @@
                         }
                       },
                       {
-                        "id": 29693,
+                        "id": 29797,
                         "name": "delegate",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 29658,
+                        "referencedDeclaration": 29762,
                         "src": "2442:8:62",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                          "typeIdentifier": "t_contract$_MyDelegate_$29694",
                           "typeString": "contract MyDelegate"
                         }
                       },
                       {
-                        "id": 29694,
+                        "id": 29798,
                         "name": "_directory",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 29654,
+                        "referencedDeclaration": 29758,
                         "src": "2452:10:62",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_IJBDirectory_$27586",
@@ -1672,7 +1672,7 @@
                       },
                       {
                         "expression": {
-                          "id": 29695,
+                          "id": 29799,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -1683,7 +1683,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 29696,
+                        "id": 29800,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1705,7 +1705,7 @@
                           "typeString": "uint256"
                         },
                         {
-                          "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                          "typeIdentifier": "t_contract$_MyDelegate_$29694",
                           "typeString": "contract MyDelegate"
                         },
                         {
@@ -1717,18 +1717,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 29691,
+                      "id": 29795,
                       "name": "DelegateDeployed",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 29615,
+                      "referencedDeclaration": 29719,
                       "src": "2413:16:62",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_contract$_MyDelegate_$29590_$_t_contract$_IJBDirectory_$27586_$_t_address_$returns$__$",
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_contract$_MyDelegate_$29694_$_t_contract$_IJBDirectory_$27586_$_t_address_$returns$__$",
                         "typeString": "function (uint256,contract MyDelegate,contract IJBDirectory,address)"
                       }
                     },
-                    "id": 29697,
+                    "id": 29801,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1744,14 +1744,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 29698,
+                  "id": 29802,
                   "nodeType": "EmitStatement",
                   "src": "2408:67:62"
                 }
               ]
             },
             "documentation": {
-              "id": 29646,
+              "id": 29750,
               "nodeType": "StructuredDocumentation",
               "src": "1446:373:62",
               "text": "@notice Deploys a delegate for the provided project.\n @param _projectId The ID of the project for which the delegate will be deployed.\n @param _deployMyDelegateData Data necessary to deploy the delegate.\n @param _directory The directory of terminals and controllers for projects.\n @return delegate The address of the newly deployed delegate."
@@ -1763,17 +1763,17 @@
             "name": "deployDelegateFor",
             "nameLocation": "1833:17:62",
             "parameters": {
-              "id": 29655,
+              "id": 29759,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29648,
+                  "id": 29752,
                   "mutability": "mutable",
                   "name": "_projectId",
                   "nameLocation": "1868:10:62",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29700,
+                  "scope": 29804,
                   "src": "1860:18:62",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1782,7 +1782,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 29647,
+                    "id": 29751,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1860:7:62",
@@ -1795,36 +1795,36 @@
                 },
                 {
                   "constant": false,
-                  "id": 29651,
+                  "id": 29755,
                   "mutability": "mutable",
                   "name": "_deployMyDelegateData",
                   "nameLocation": "1916:21:62",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29700,
+                  "scope": 29804,
                   "src": "1888:49:62",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_DeployMyDelegateData_$30177_memory_ptr",
+                    "typeIdentifier": "t_struct$_DeployMyDelegateData_$30281_memory_ptr",
                     "typeString": "struct DeployMyDelegateData"
                   },
                   "typeName": {
-                    "id": 29650,
+                    "id": 29754,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 29649,
+                      "id": 29753,
                       "name": "DeployMyDelegateData",
                       "nameLocations": [
                         "1888:20:62"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 30177,
+                      "referencedDeclaration": 30281,
                       "src": "1888:20:62"
                     },
-                    "referencedDeclaration": 30177,
+                    "referencedDeclaration": 30281,
                     "src": "1888:20:62",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_DeployMyDelegateData_$30177_storage_ptr",
+                      "typeIdentifier": "t_struct$_DeployMyDelegateData_$30281_storage_ptr",
                       "typeString": "struct DeployMyDelegateData"
                     }
                   },
@@ -1832,12 +1832,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 29654,
+                  "id": 29758,
                   "mutability": "mutable",
                   "name": "_directory",
                   "nameLocation": "1960:10:62",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29700,
+                  "scope": 29804,
                   "src": "1947:23:62",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1846,10 +1846,10 @@
                     "typeString": "contract IJBDirectory"
                   },
                   "typeName": {
-                    "id": 29653,
+                    "id": 29757,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 29652,
+                      "id": 29756,
                       "name": "IJBDirectory",
                       "nameLocations": [
                         "1947:12:62"
@@ -1871,41 +1871,41 @@
               "src": "1850:126:62"
             },
             "returnParameters": {
-              "id": 29659,
+              "id": 29763,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 29658,
+                  "id": 29762,
                   "mutability": "mutable",
                   "name": "delegate",
                   "nameLocation": "2006:8:62",
                   "nodeType": "VariableDeclaration",
-                  "scope": 29700,
+                  "scope": 29804,
                   "src": "1995:19:62",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                    "typeIdentifier": "t_contract$_MyDelegate_$29694",
                     "typeString": "contract MyDelegate"
                   },
                   "typeName": {
-                    "id": 29657,
+                    "id": 29761,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 29656,
+                      "id": 29760,
                       "name": "MyDelegate",
                       "nameLocations": [
                         "1995:10:62"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 29590,
+                      "referencedDeclaration": 29694,
                       "src": "1995:10:62"
                     },
-                    "referencedDeclaration": 29590,
+                    "referencedDeclaration": 29694,
                     "src": "1995:10:62",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_MyDelegate_$29590",
+                      "typeIdentifier": "t_contract$_MyDelegate_$29694",
                       "typeString": "contract MyDelegate"
                     }
                   },
@@ -1914,7 +1914,7 @@
               ],
               "src": "1994:21:62"
             },
-            "scope": 29701,
+            "scope": 29805,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
@@ -1926,21 +1926,21 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 29603,
+          "id": 29707,
           "nodeType": "StructuredDocumentation",
           "src": "460:57:62",
           "text": "@notice A contract that deploys a delegate contract."
         },
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          29701
+          29805
         ],
         "name": "MyDelegateDeployer",
         "nameLocation": "526:18:62",
-        "scope": 29702,
+        "scope": 29806,
         "usedErrors": [],
         "usedEvents": [
-          29615
+          29719
         ]
       }
     ],
