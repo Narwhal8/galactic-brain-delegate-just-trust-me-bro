@@ -1,19 +1,19 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import { IERC165 } from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
-import { IJBDirectory } from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBDirectory.sol";
-import { IJBFundingCycleDataSource } from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBFundingCycleDataSource.sol";
-import { IJBPayDelegate } from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBPayDelegate.sol";
-import { IJBPaymentTerminal } from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBPaymentTerminal.sol";
-import { IJBRedemptionDelegate } from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBRedemptionDelegate.sol";
-import { JBPayParamsData } from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBPayParamsData.sol";
-import { JBDidPayData } from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBDidPayData.sol";
-import { JBDidRedeemData } from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBDidRedeemData.sol";
-import { JBRedeemParamsData } from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedeemParamsData.sol";
-import { JBPayDelegateAllocation } from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBPayDelegateAllocation.sol";
-import { JBRedemptionDelegateAllocation } from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedemptionDelegateAllocation.sol";
-import { DeployMyDelegateData } from "./structs/DeployMyDelegateData.sol";
+import {IERC165} from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
+import {IJBDirectory} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBDirectory.sol";
+import {IJBFundingCycleDataSource} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBFundingCycleDataSource.sol";
+import {IJBPayDelegate} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBPayDelegate.sol";
+import {IJBPaymentTerminal} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBPaymentTerminal.sol";
+import {IJBRedemptionDelegate} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBRedemptionDelegate.sol";
+import {JBPayParamsData} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBPayParamsData.sol";
+import {JBDidPayData} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBDidPayData.sol";
+import {JBDidRedeemData} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBDidRedeemData.sol";
+import {JBRedeemParamsData} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedeemParamsData.sol";
+import {JBPayDelegateAllocation} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBPayDelegateAllocation.sol";
+import {JBRedemptionDelegateAllocation} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedemptionDelegateAllocation.sol";
+import {DeployMyDelegateData} from "./structs/DeployMyDelegateData.sol";
 
 /// @notice A contract that is a Data Source, a Pay Delegate, and a Redemption Delegate.
 /// @dev This example implementation confines payments to an allow list.
@@ -47,7 +47,9 @@ contract MyDelegate is
         uint256 maxContribution;
     }
 
-    Tier[] public bonusTiers;
+    Tier public tier1;
+    Tier public tier2;
+    Tier public tier3;
 
     /// @notice Addresses allowed to make payments to the treasury.
     mapping(address => bool) public paymentFromAddressIsAllowed;
@@ -59,7 +61,9 @@ contract MyDelegate is
     /// @return weight The weight that project tokens should get minted relative to.
     /// @return memo A memo to be forwarded to the event.
     /// @return delegateAllocations Amount to be sent to delegates instead of adding to local balance.
-    function payParams(JBPayParamsData calldata _data)
+    function payParams(
+        JBPayParamsData calldata _data
+    )
         external
         view
         virtual
@@ -85,7 +89,9 @@ contract MyDelegate is
     /// @return reclaimAmount Amount to be reclaimed from the treasury.
     /// @return memo A memo to be forwarded to the event.
     /// @return delegateAllocations Amount to be sent to delegates instead of being added to the beneficiary.
-    function redeemParams(JBRedeemParamsData calldata _data)
+    function redeemParams(
+        JBRedeemParamsData calldata _data
+    )
         external
         view
         virtual
@@ -108,22 +114,19 @@ contract MyDelegate is
     /// @dev See {IERC165-supportsInterface}.
     /// @param _interfaceId The ID of the interface to check for adherence to.
     /// @return A flag indicating if the provided interface ID is supported.
-    function supportsInterface(bytes4 _interfaceId)
-        public
-        view
-        virtual
-        override
-        returns (bool)
-    {
+    function supportsInterface(
+        bytes4 _interfaceId
+    ) public view virtual override returns (bool) {
         return
-            _interfaceId ==
-                type(IJBFundingCycleDataSource).interfaceId ||
+            _interfaceId == type(IJBFundingCycleDataSource).interfaceId ||
             _interfaceId == type(IJBPayDelegate).interfaceId ||
             _interfaceId == type(IJBRedemptionDelegate).interfaceId;
     }
 
-    constructor(Tier[] memory _bonusTiers) {
-        bonusTiers = _bonusTiers;
+    constructor(Tier memory _tier1, Tier memory _tier2, Tier memory _tier3) {
+        tier1 = _tier1;
+        tier2 = _tier2;
+        tier3 = _tier3;
     }
 
     /// @notice Initializes the clone contract with project details and a directory from which ecosystem payment terminals and controller can be found.
@@ -156,16 +159,52 @@ contract MyDelegate is
         }
     }
 
+    /// @notice Sets the bonus tiers.
+    /// @param _tier1BonusPercentage The bonus percentage for tier 1.
+    /// @param _tier1MinContribution The minimum contribution for tier 1.
+    /// @param _tier1MaxContribution The maximum contribution for tier 1.
+    /// @param _tier2BonusPercentage The bonus percentage for tier 2.
+    /// @param _tier2MinContribution The minimum contribution for tier 2.
+    /// @param _tier2MaxContribution The maximum contribution for tier 2.
+    /// @param _tier3BonusPercentage The bonus percentage for tier 3.
+    /// @param _tier3MinContribution The minimum contribution for tier 3.
+    /// @param _tier3MaxContribution The maximum contribution for tier 3.
+    function setBonusTiers(
+        uint256 _tier1BonusPercentage,
+        uint256 _tier1MinContribution,
+        uint256 _tier1MaxContribution,
+
+        uint256 _tier2BonusPercentage,
+        uint256 _tier2MinContribution,
+        uint256 _tier2MaxContribution,
+        
+        uint256 _tier3BonusPercentage,
+        uint256 _tier3MinContribution,
+        uint256 _tier3MaxContribution
+    ) external {
+        tier1 = Tier(
+            _tier1BonusPercentage,
+            _tier1MinContribution,
+            _tier1MaxContribution
+        );
+        tier2 = Tier(
+            _tier2BonusPercentage,
+            _tier2MinContribution,
+            _tier2MaxContribution
+        );
+        tier3 = Tier(
+            _tier3BonusPercentage,
+            _tier3MinContribution,
+            _tier3MaxContribution
+        );
+    }
+
     /// @notice Received hook from the payment terminal after a payment.
     /// @dev Reverts if the calling contract is not one of the project's terminals.
-    /// @dev This example implementation reverts if the payer isn't on the allow list.
     /// @param _data Standard Juicebox project payment data.
-    function didPay(JBDidPayData calldata _data)
-        external
-        payable
-        virtual
-        override
-    {
+    function didPay(
+        JBDidPayData calldata _data
+    ) external payable virtual override {
         // Make sure the caller is a terminal of the project, and that the call is being made on behalf of an interaction with the correct project.
         if (
             msg.value != 0 ||
@@ -184,12 +223,9 @@ contract MyDelegate is
     /// @notice Received hook from the payment terminal after a redemption.
     /// @dev Reverts if the calling contract is not one of the project's terminals.
     /// @param _data Standard Juicebox project redemption data.
-    function didRedeem(JBDidRedeemData calldata _data)
-        external
-        payable
-        virtual
-        override
-    {
+    function didRedeem(
+        JBDidRedeemData calldata _data
+    ) external payable virtual override {
         // Make sure the caller is a terminal of the project, and that the call is being made on behalf of an interaction with the correct project.
         if (
             msg.value != 0 ||
@@ -206,28 +242,28 @@ contract MyDelegate is
             );
     }
 
-    /// @dev Calculates the weight based on the contribution amount.
-    function calculateWeight(uint256 contributionAmount)
-        private
-        view
-        returns (uint256)
-    {
-        for (uint256 i = 0; i < bonusTiers.length; i++) {
-            if (
-                contributionAmount >= bonusTiers[i].minContribution &&
-                contributionAmount <= bonusTiers[i].maxContribution
-            ) {
-                return contributionAmount * bonusTiers[i].bonusPercentage / 100;
-            }
+    /// @dev Calculates the weight based on the contribution amount and the bonus tiers.
+    function calculateWeight(
+        uint256 contributionAmount
+    ) private view returns (uint256) {
+        if (
+            contributionAmount >= tier1.minContribution &&
+            contributionAmount <= tier1.maxContribution
+        ) {
+            return (contributionAmount * tier1.bonusPercentage) / 100;
+        } else if (
+            contributionAmount >= tier2.minContribution &&
+            contributionAmount <= tier2.maxContribution
+        ) {
+            return (contributionAmount * tier2.bonusPercentage) / 100;
+        } else if (
+            contributionAmount >= tier3.minContribution &&
+            contributionAmount <= tier3.maxContribution
+        ) {
+            return (contributionAmount * tier3.bonusPercentage) / 100;
+        } else {
+            // If the contribution doesn't fall within any tier, return the default weight.
+            return contributionAmount;
         }
-
-        // If the contribution doesn't fall within any tier, return the default weight.
-        return contributionAmount;
-    }
-
-    /// @notice Sets the bonus tiers for the tiered bonus system.
-    /// @param _bonusTiers The array of bonus tiers.
-    function setBonusTiers(Tier[] memory _bonusTiers) external {
-        bonusTiers = _bonusTiers;
     }
 }
