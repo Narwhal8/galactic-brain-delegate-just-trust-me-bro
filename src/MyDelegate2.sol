@@ -41,15 +41,21 @@ contract MyDelegate is
     IJBDirectory public directory;
 
     // Tiered Bonus System
-    struct Tier {
-        uint256 bonusPercentage;
-        uint256 minContribution;
-        uint256 maxContribution;
+    struct Tierdata {
+        uint24 bonusPercentage1;
+        uint24 minContribution1;
+        uint24 maxContribution1;
+
+        uint24 bonusPercentage2;
+        uint24 minContribution2;
+        uint24 maxContribution2;
+
+        uint24 bonusPercentage3;
+        uint24 minContribution3;
+        uint24 maxContribution3;
     }
 
-    Tier public tier1;
-    Tier public tier2;
-    Tier public tier3;
+    Tierdata public Tierinfo;
 
     /// @notice Addresses allowed to make payments to the treasury.
     mapping(address => bool) public paymentFromAddressIsAllowed;
@@ -123,10 +129,8 @@ contract MyDelegate is
             _interfaceId == type(IJBRedemptionDelegate).interfaceId;
     }
 
-    constructor(Tier memory _tier1, Tier memory _tier2, Tier memory _tier3) {
-        tier1 = _tier1;
-        tier2 = _tier2;
-        tier3 = _tier3;
+    constructor( Tierdata memory _structinfo ) {
+        Tierinfo = _structinfo; 
     }
 
     /// @notice Initializes the clone contract with project details and a directory from which ecosystem payment terminals and controller can be found.
@@ -170,33 +174,34 @@ contract MyDelegate is
     /// @param _tier3MinContribution The minimum contribution for tier 3.
     /// @param _tier3MaxContribution The maximum contribution for tier 3.
     function setBonusTiers(
-        uint256 _tier1BonusPercentage,
-        uint256 _tier1MinContribution,
-        uint256 _tier1MaxContribution,
+        uint24 _tier1BonusPercentage,
+        uint24 _tier1MinContribution,
+        uint24 _tier1MaxContribution,
 
-        uint256 _tier2BonusPercentage,
-        uint256 _tier2MinContribution,
-        uint256 _tier2MaxContribution,
+        uint24 _tier2BonusPercentage,
+        uint24 _tier2MinContribution,
+        uint24 _tier2MaxContribution,
         
-        uint256 _tier3BonusPercentage,
-        uint256 _tier3MinContribution,
-        uint256 _tier3MaxContribution
+        uint24 _tier3BonusPercentage,
+        uint24 _tier3MinContribution,
+        uint24 _tier3MaxContribution
     ) external {
-        tier1 = Tier(
-            _tier1BonusPercentage,
-            _tier1MinContribution,
-            _tier1MaxContribution
+
+        
+        Tierinfo = Tierdata(
+         _tier1BonusPercentage,
+         _tier1MinContribution,
+         _tier1MaxContribution,
+
+         _tier2BonusPercentage,
+         _tier2MinContribution,
+         _tier2MaxContribution,
+        
+         _tier3BonusPercentage,
+         _tier3MinContribution,
+         _tier3MaxContribution
         );
-        tier2 = Tier(
-            _tier2BonusPercentage,
-            _tier2MinContribution,
-            _tier2MaxContribution
-        );
-        tier3 = Tier(
-            _tier3BonusPercentage,
-            _tier3MinContribution,
-            _tier3MaxContribution
-        );
+        
     }
 
     /// @notice Received hook from the payment terminal after a payment.
@@ -247,20 +252,20 @@ contract MyDelegate is
         uint256 contributionAmount
     ) private view returns (uint256) {
         if (
-            contributionAmount >= tier1.minContribution &&
-            contributionAmount <= tier1.maxContribution
+            contributionAmount >= Tierinfo.minContribution1 &&
+            contributionAmount <= Tierinfo.maxContribution1
         ) {
-            return (contributionAmount * tier1.bonusPercentage) / 100;
+            return (contributionAmount * Tierinfo.bonusPercentage1) / 100;
         } else if (
-            contributionAmount >= tier2.minContribution &&
-            contributionAmount <= tier2.maxContribution
+            contributionAmount >= Tierinfo.minContribution2 &&
+            contributionAmount <= Tierinfo.maxContribution2
         ) {
-            return (contributionAmount * tier2.bonusPercentage) / 100;
+            return (contributionAmount * Tierinfo.bonusPercentage2) / 100;
         } else if (
-            contributionAmount >= tier3.minContribution &&
-            contributionAmount <= tier3.maxContribution
+            contributionAmount >= Tierinfo.minContribution3 &&
+            contributionAmount <= Tierinfo.maxContribution3
         ) {
-            return (contributionAmount * tier3.bonusPercentage) / 100;
+            return (contributionAmount * Tierinfo.bonusPercentage3) / 100;
         } else {
             // If the contribution doesn't fall within any tier, return the default weight.
             return contributionAmount;
