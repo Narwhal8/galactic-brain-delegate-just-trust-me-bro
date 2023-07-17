@@ -2,6 +2,7 @@
   "name": "juice-delegate-template",
   "version": "0.0.0",
   "dependencies": {
+    "@jbx-protocol/juice-ownable": "https://github.com/jbx-protocol/juice-ownable",
     "@jbx-protocol/juice-contracts-v3": "^3.1.2",
     "@jbx-protocol/juice-delegates-registry": "^1.0.0",
     "@openzeppelin/contracts": "^4.9.2",
