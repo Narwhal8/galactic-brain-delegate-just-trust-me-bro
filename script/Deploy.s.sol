@@ -11,7 +11,7 @@ import {MyDelegateProjectDeployer} from "./../src/MyDelegateProjectDeployer.sol"
 abstract contract Deploy is Script {
     function _run(IJBOperatorStore _operatorStore, IJBDelegatesRegistry _registry) internal {
         vm.broadcast();
-        MyDelegate _delegateImplementation = new MyDelegate(1e17,4e17,110,5e17,1e17,120,1e18,1e21,130);
+        MyDelegate _delegateImplementation = new MyDelegate(1e17,4e17,110,5e17,10e17,120,1e18,1e21,130);
         MyDelegateDeployer _delegateDeployer = new MyDelegateDeployer(_delegateImplementation, _registry);
         new MyDelegateProjectDeployer(
               _delegateDeployer,
