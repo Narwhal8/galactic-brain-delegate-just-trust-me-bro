@@ -1,0 +1,123 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "node_modules/@openzeppelin/contracts/token/ERC721/extensions/draft-ERC721Votes.sol",
+    "id": 45918,
+    "exportedSymbols": {
+      "Address": [
+        46247
+      ],
+      "Checkpoints": [
+        47788
+      ],
+      "Context": [
+        47810
+      ],
+      "Counters": [
+        47884
+      ],
+      "ECDSA": [
+        48805
+      ],
+      "EIP712": [
+        49009
+      ],
+      "ERC165": [
+        49033
+      ],
+      "ERC721": [
+        45700
+      ],
+      "ERC721Votes": [
+        45887
+      ],
+      "IERC165": [
+        49239
+      ],
+      "IERC5267": [
+        42972
+      ],
+      "IERC5805": [
+        42981
+      ],
+      "IERC6372": [
+        42996
+      ],
+      "IERC721": [
+        45816
+      ],
+      "IERC721Metadata": [
+        45914
+      ],
+      "IERC721Receiver": [
+        45834
+      ],
+      "IVotes": [
+        42396
+      ],
+      "Math": [
+        50105
+      ],
+      "SafeCast": [
+        51646
+      ],
+      "ShortString": [
+        47889
+      ],
+      "ShortStrings": [
+        48100
+      ],
+      "SignedMath": [
+        51751
+      ],
+      "StorageSlot": [
+        48210
+      ],
+      "Strings": [
+        48439
+      ],
+      "Votes": [
+        42947
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "129:183:120",
+    "nodes": [
+      {
+        "id": 45916,
+        "nodeType": "PragmaDirective",
+        "src": "129:23:120",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 45917,
+        "nodeType": "ImportDirective",
+        "src": "284:27:120",
+        "nodes": [],
+        "absolutePath": "node_modules/@openzeppelin/contracts/token/ERC721/extensions/ERC721Votes.sol",
+        "file": "./ERC721Votes.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 45918,
+        "sourceUnit": 45888,
+        "symbolAliases": [],
+        "unitAlias": ""
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 120
+}

@@ -1,0 +1,166 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBFee.sol",
+    "id": 41540,
+    "exportedSymbols": {
+      "JBFee": [
+        41539
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:532:81",
+    "nodes": [
+      {
+        "id": 41529,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:81",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 41539,
+        "nodeType": "StructDefinition",
+        "src": "470:93:81",
+        "nodes": [],
+        "canonicalName": "JBFee",
+        "documentation": {
+          "id": 41530,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:413:81",
+          "text": "@custom:member amount The total amount the fee was taken from, as a fixed point number with the same number of decimals as the terminal in which this struct was created.\n @custom:member fee The percent of the fee, out of MAX_FEE.\n @custom:member feeDiscount The discount of the fee.\n @custom:member beneficiary The address that will receive the tokens that are minted as a result of the fee payment."
+        },
+        "members": [
+          {
+            "constant": false,
+            "id": 41532,
+            "mutability": "mutable",
+            "name": "amount",
+            "nameLocation": "495:6:81",
+            "nodeType": "VariableDeclaration",
+            "scope": 41539,
+            "src": "487:14:81",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 41531,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "487:7:81",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 41534,
+            "mutability": "mutable",
+            "name": "fee",
+            "nameLocation": "512:3:81",
+            "nodeType": "VariableDeclaration",
+            "scope": 41539,
+            "src": "505:10:81",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 41533,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "505:6:81",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 41536,
+            "mutability": "mutable",
+            "name": "feeDiscount",
+            "nameLocation": "526:11:81",
+            "nodeType": "VariableDeclaration",
+            "scope": 41539,
+            "src": "519:18:81",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint32",
+              "typeString": "uint32"
+            },
+            "typeName": {
+              "id": 41535,
+              "name": "uint32",
+              "nodeType": "ElementaryTypeName",
+              "src": "519:6:81",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint32",
+                "typeString": "uint32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 41538,
+            "mutability": "mutable",
+            "name": "beneficiary",
+            "nameLocation": "549:11:81",
+            "nodeType": "VariableDeclaration",
+            "scope": 41539,
+            "src": "541:19:81",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 41537,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "541:7:81",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "JBFee",
+        "nameLocation": "477:5:81",
+        "scope": 41540,
+        "visibility": "public"
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 81
+}

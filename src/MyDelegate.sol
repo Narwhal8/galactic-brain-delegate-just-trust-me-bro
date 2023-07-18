@@ -1,6 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
+
+
+
 import {IERC165} from "@openzeppelin/contracts/utils/introspection/IERC165.sol";
 import {IJBDirectory} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBDirectory.sol";
 import {IJBFundingCycleDataSource} from "@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBFundingCycleDataSource.sol";
@@ -15,12 +18,18 @@ import {JBPayDelegateAllocation} from "@jbx-protocol/juice-contracts-v3/contract
 import {JBRedemptionDelegateAllocation} from "@jbx-protocol/juice-contracts-v3/contracts/structs/JBRedemptionDelegateAllocation.sol";
 import {DeployMyDelegateData} from "./structs/DeployMyDelegateData.sol";
 
+
+// Imported JBOwnable to only allow owner + admins to change the bonus rates
+import {JBOwnable} from "@jbx-protocol/juice-ownable/src/JBOwnable.sol";
+
+
 /// @notice A contract that is a Data Source, a Pay Delegate, and a Redemption Delegate.
 /// @dev This example implementation confines payments to an allow list.
 contract MyDelegate is
     IJBFundingCycleDataSource,
     IJBPayDelegate,
-    IJBRedemptionDelegate
+    IJBRedemptionDelegate,
+    JBOwnable
 {
     error INVALID_PAYMENT_EVENT(
         address caller,
@@ -140,7 +149,7 @@ contract MyDelegate is
         
         uint24 _tier3BonusPercentage,
         uint72 _tier3MinContribution,
-        uint72 _tier3MaxContribution) {
+        uint72 _tier3MaxContribution) JBOwnable(projects,operatorStore){
         
         Tierinfo = Tierdata(
          _tier1BonusPercentage,
@@ -196,7 +205,7 @@ contract MyDelegate is
     /// @param _tier3BonusPercentage The bonus percentage for tier 3.
     /// @param _tier3MinContribution The minimum contribution for tier 3.
     /// @param _tier3MaxContribution The maximum contribution for tier 3.
-    function setBonusTiers(
+    function  setBonusTiers   (
         uint24 _tier1BonusPercentage,
         uint72 _tier1MinContribution,
         uint72 _tier1MaxContribution,
@@ -208,9 +217,8 @@ contract MyDelegate is
         uint24 _tier3BonusPercentage,
         uint72 _tier3MinContribution,
         uint72 _tier3MaxContribution
-    ) external {
-
-        
+    )  external onlyOwner {
+            
         Tierinfo = Tierdata(
          _tier1BonusPercentage,
          _tier1MinContribution,
