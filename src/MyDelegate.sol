@@ -51,17 +51,18 @@ contract MyDelegate is
 
     // Tiered Bonus System
     struct Tierdata {
-        uint24 tier1BonusPercentage;
         uint72 tier1MinContribution;
         uint72 tier1MaxContribution;
+        uint24 tier1BonusPercentage;
 
-        uint24 tier2BonusPercentage;
         uint72 tier2MinContribution;
         uint72 tier2MaxContribution;
-        
-        uint24 tier3BonusPercentage;
+        uint24 tier2BonusPercentage;
+
         uint72 tier3MinContribution;
         uint72 tier3MaxContribution;
+        uint24 tier3BonusPercentage;
+
     }
 
     Tierdata public Tierinfo;
@@ -139,30 +140,30 @@ contract MyDelegate is
     }
 
     constructor(        
-        uint24 _tier1BonusPercentage,
         uint72 _tier1MinContribution,
         uint72 _tier1MaxContribution,
+        uint24 _tier1BonusPercentage,
 
-        uint24 _tier2BonusPercentage,
         uint72 _tier2MinContribution,
         uint72 _tier2MaxContribution,
+        uint24 _tier2BonusPercentage,
         
-        uint24 _tier3BonusPercentage,
         uint72 _tier3MinContribution,
-        uint72 _tier3MaxContribution) JBOwnable(projects,operatorStore){
+        uint72 _tier3MaxContribution,        
+        uint24 _tier3BonusPercentage) JBOwnable(projects,operatorStore){
         
         Tierinfo = Tierdata(
-         _tier1BonusPercentage,
          _tier1MinContribution,
          _tier1MaxContribution,
+         _tier1BonusPercentage,
 
-         _tier2BonusPercentage,
          _tier2MinContribution,
          _tier2MaxContribution,
+         _tier2BonusPercentage,
         
-         _tier3BonusPercentage,
          _tier3MinContribution,
-         _tier3MaxContribution
+         _tier3MaxContribution,
+         _tier3BonusPercentage
         );    }
 
     /// @notice Initializes the clone contract with project details and a directory from which ecosystem payment terminals and controller can be found.
@@ -196,41 +197,41 @@ contract MyDelegate is
     }
 
     /// @notice Sets the bonus tiers.
-    /// @param _tier1BonusPercentage The bonus percentage for tier 1.
     /// @param _tier1MinContribution The minimum contribution for tier 1.
     /// @param _tier1MaxContribution The maximum contribution for tier 1.
-    /// @param _tier2BonusPercentage The bonus percentage for tier 2.
+    /// @param _tier1BonusPercentage The bonus percentage for tier 1.
     /// @param _tier2MinContribution The minimum contribution for tier 2.
     /// @param _tier2MaxContribution The maximum contribution for tier 2.
-    /// @param _tier3BonusPercentage The bonus percentage for tier 3.
+    /// @param _tier2BonusPercentage The bonus percentage for tier 2.
     /// @param _tier3MinContribution The minimum contribution for tier 3.
     /// @param _tier3MaxContribution The maximum contribution for tier 3.
+    /// @param _tier3BonusPercentage The bonus percentage for tier 3.
     function  setBonusTiers   (
-        uint24 _tier1BonusPercentage,
         uint72 _tier1MinContribution,
         uint72 _tier1MaxContribution,
+        uint24 _tier1BonusPercentage,
 
-        uint24 _tier2BonusPercentage,
         uint72 _tier2MinContribution,
         uint72 _tier2MaxContribution,
+        uint24 _tier2BonusPercentage,
         
-        uint24 _tier3BonusPercentage,
         uint72 _tier3MinContribution,
-        uint72 _tier3MaxContribution
+        uint72 _tier3MaxContribution,        
+        uint24 _tier3BonusPercentage
     )  external onlyOwner {
             
         Tierinfo = Tierdata(
-         _tier1BonusPercentage,
          _tier1MinContribution,
          _tier1MaxContribution,
+         _tier1BonusPercentage,
 
-         _tier2BonusPercentage,
          _tier2MinContribution,
          _tier2MaxContribution,
+         _tier2BonusPercentage,
         
-         _tier3BonusPercentage,
          _tier3MinContribution,
-         _tier3MaxContribution
+         _tier3MaxContribution,
+         _tier3BonusPercentage
         );
         
     }

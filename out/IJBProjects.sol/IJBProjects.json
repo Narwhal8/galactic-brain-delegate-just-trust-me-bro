@@ -1172,7 +1172,7 @@
     "id": 39865,
     "exportedSymbols": {
       "IERC721": [
-        45816
+        46372
       ],
       "IJBProjects": [
         39864
@@ -1208,7 +1208,7 @@
         "file": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 39865,
-        "sourceUnit": 45817,
+        "sourceUnit": 46373,
         "symbolAliases": [
           {
             "foreign": {
@@ -1216,7 +1216,7 @@
               "name": "IERC721",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 45816,
+              "referencedDeclaration": 46372,
               "src": "65:7:58",
               "typeDescriptions": {}
             },
@@ -2144,7 +2144,7 @@
                 "290:7:58"
               ],
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 45816,
+              "referencedDeclaration": 46372,
               "src": "290:7:58"
             },
             "id": 39792,
@@ -2158,8 +2158,8 @@
         "fullyImplemented": false,
         "linearizedBaseContracts": [
           39864,
-          45816,
-          49239
+          46372,
+          49795
         ],
         "name": "IJBProjects",
         "nameLocation": "275:11:58",
@@ -2169,9 +2169,9 @@
           39803,
           39812,
           39819,
-          45715,
-          45724,
-          45733
+          46271,
+          46280,
+          46289
         ]
       }
     ],

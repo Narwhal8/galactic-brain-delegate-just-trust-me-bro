@@ -1,0 +1,1228 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract IJBProjects",
+          "name": "_projects",
+          "type": "address"
+        },
+        {
+          "internalType": "contract IJBOperatorStore",
+          "name": "_operatorStore",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "ownerAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "projectId",
+          "type": "uint256"
+        }
+      ],
+      "name": "INVALID_NEW_OWNER",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "UNAUTHORIZED",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "newIndex",
+          "type": "uint8"
+        }
+      ],
+      "name": "PermissionIndexChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "jbOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint88",
+          "name": "projectId",
+          "type": "uint88"
+        },
+        {
+          "internalType": "uint8",
+          "name": "permissionIndex",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "operatorStore",
+      "outputs": [
+        {
+          "internalType": "contract IJBOperatorStore",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "projects",
+      "outputs": [
+        {
+          "internalType": "contract IJBProjects",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "_permissionIndex",
+          "type": "uint8"
+        }
+      ],
+      "name": "setPermissionIndex",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_projectId",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferOwnershipToProject",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60c06040523480156200001157600080fd5b5060405162000d5b38038062000d5b8339810160408190526200003491620002fc565b6001600160a01b03808216608052821660a052818162000054336200005e565b5050505062000362565b6200006b8160006200006e565b50565b6001600160581b038116158015906200008f57506001600160a01b03821615155b15620000cc576040516324abfd1160e11b81526001600160a01b03831660048201526001600160581b038216602482015260440160405180910390fd5b60408051606081018252600080546001600160a01b0381168352600160a01b81046001600160581b031660208401819052600160f81b90910460ff16938301939093529091156200019b5760a05160208301516040516331a9108f60e11b81526001600160581b0390911660048201526001600160a01b0390911690636352211e90602401602060405180830381865afa1580156200016f573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906200019591906200033b565b6200019e565b81515b604080516060810182526001600160a01b0387168082526001600160581b0387166020830181905260009290930182905281547fff000000000000000000000000000000000000000000000000000000000000001617600160a01b8302176001600160f81b031690559091506200029c90829015620002955760a0516040516331a9108f60e11b81526001600160581b03871660048201526001600160a01b0390911690636352211e90602401602060405180830381865afa15801562000269573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906200028f91906200033b565b620002a2565b85620002a2565b50505050565b806001600160a01b0316826001600160a01b03167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a35050565b6001600160a01b03811681146200006b57600080fd5b600080604083850312156200031057600080fd5b82516200031d81620002e6565b60208401519092506200033081620002e6565b809150509250929050565b6000602082840312156200034e57600080fd5b81516200035b81620002e6565b9392505050565b60805160a0516109aa620003b16000396000818160af01528181610240015281816103c601528181610582015261067a01526000818161010e0152818161074801526107f101526109aa6000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c8063a220d6961161005b578063a220d696146100f6578063ad007d6314610109578063ba23c36e14610130578063f2fde38b1461019057600080fd5b806361aec7a91461008d578063715018a6146100a25780638b79543c146100aa5780638da5cb5b146100ee575b600080fd5b6100a061009b3660046108c0565b6101a3565b005b6100a06101b7565b6100d17f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020015b60405180910390f35b6100d16101cc565b6100a06101043660046108ea565b6102b9565b6100d17f000000000000000000000000000000000000000000000000000000000000000081565b600054610160906001600160a01b03811690600160a01b81046001600160581b031690600160f81b900460ff1683565b604080516001600160a01b0390941684526001600160581b03909216602084015260ff16908201526060016100e5565b6100a061019e366004610918565b61030c565b6101ab610358565b6101b481610466565b50565b6101bf610358565b6101ca6000806104bc565b565b60408051606081018252600080546001600160a01b0381168352600160a01b81046001600160581b031660208401819052600160f81b90910460ff169383019390935291820361021c5751919050565b60208101516040516331a9108f60e11b81526001600160581b0390911660048201527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031690636352211e90602401602060405180830381865afa15801561028f573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102b39190610935565b91505090565b6102c1610358565b8015806102d457506001600160581b0381115b15610301576040516324abfd1160e11b815260006004820152602481018290526044015b60405180910390fd5b6101b46000826104bc565b610314610358565b6001600160a01b03811661034d576040516324abfd1160e11b81526001600160a01b0382166004820152600060248201526044016102f8565b6101b48160006104bc565b60408051606081018252600080546001600160a01b0381168352600160a01b81046001600160581b031660208401819052600160f81b90910460ff169383019390935290911561043e5760208201516040516331a9108f60e11b81526001600160581b0390911660048201527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031690636352211e90602401602060405180830381865afa158015610415573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104399190610935565b610441565b81515b90506104628183602001516001600160581b0316846040015160ff166106fe565b5050565b600080546001600160f81b0316600160f81b60ff8416908102919091179091556040519081527f197cbe84f592e417694036927858418efc958896363c034f9aaa25af88953beb9060200160405180910390a150565b6001600160581b038116158015906104dc57506001600160a01b03821615155b15610514576040516324abfd1160e11b81526001600160a01b03831660048201526001600160581b03821660248201526044016102f8565b60408051606081018252600080546001600160a01b0381168352600160a01b81046001600160581b031660208401819052600160f81b90910460ff16938301939093529091156105fa5760208201516040516331a9108f60e11b81526001600160581b0390911660048201527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031690636352211e90602401602060405180830381865afa1580156105d1573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105f59190610935565b6105fd565b81515b604080516060810182526001600160a01b0387168082526001600160581b0387166020830181905260009290930182905281546001600160f81b03191617600160a01b8302176001600160f81b031690559091506106f8908290156106f2576040516331a9108f60e11b81526001600160581b03861660048201527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031690636352211e90602401602060405180830381865afa1580156106c9573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106ed9190610935565b61087c565b8561087c565b50505050565b336001600160a01b03841681148015906107b5575060405163c161c93f60e01b81526001600160a01b038281166004830152858116602483015260448201859052606482018490527f0000000000000000000000000000000000000000000000000000000000000000169063c161c93f90608401602060405180830381865afa15801561078f573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906107b39190610952565b155b801561085e575060405163c161c93f60e01b81526001600160a01b038281166004830152858116602483015260006044830152606482018490527f0000000000000000000000000000000000000000000000000000000000000000169063c161c93f90608401602060405180830381865afa158015610838573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061085c9190610952565b155b156106f85760405163075fd2b160e01b815260040160405180910390fd5b806001600160a01b0316826001600160a01b03167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a35050565b6000602082840312156108d257600080fd5b813560ff811681146108e357600080fd5b9392505050565b6000602082840312156108fc57600080fd5b5035919050565b6001600160a01b03811681146101b457600080fd5b60006020828403121561092a57600080fd5b81356108e381610903565b60006020828403121561094757600080fd5b81516108e381610903565b60006020828403121561096457600080fd5b815180151581146108e357600080fdfea26469706673582212202df5bf03df1718d3a8cb07a8905c0bfd2a7ada50a60f8393e27d3ae76214682164736f6c63430008140033",
+    "sourceMap": "198:867:101:-:0;;;523:138;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;2823:30:102;;;;;2863:20;;;;632:9:101;643:14;2894:30:102;2913:10;2894:18;:30::i;:::-;2723:208;;523:138:101;;198:867;;8360:113:102;8434:32;8453:9;8464:1;8434:18;:32::i;:::-;8360:113;:::o;8816:1038::-;-1:-1:-1;;;;;8989:15:102;;;;;;:42;;-1:-1:-1;;;;;;9008:23:102;;;;8989:42;8985:107;;;9052:40;;-1:-1:-1;;;9052:40:102;;-1:-1:-1;;;;;817:32:153;;9052:40:102;;;799:51:153;-1:-1:-1;;;;;886:31:153;;866:18;;;859:59;772:18;;9052:40:102;;;;;;;8985:107;9147:35;;;;;;;;-1:-1:-1;9147:35:102;;-1:-1:-1;;;;;9147:35:102;;;;-1:-1:-1;;;9147:35:102;;-1:-1:-1;;;;;9147:35:102;;;;;;;-1:-1:-1;;;9147:35:102;;;;;;;;;;;;;;9270:25;:94;;9326:8;;9343:20;;;;9326:38;;-1:-1:-1;;;9326:38:102;;-1:-1:-1;;;;;1092:31:153;;;9326:38:102;;;1074:50:153;-1:-1:-1;;;;;9326:16:102;;;;;;1047:18:153;;9326:38:102;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;9270:94;;;9307:16;;9270:94;9535:116;;;;;;;;-1:-1:-1;;;;;9535:116:102;;;;;-1:-1:-1;;;;;9535:116:102;;;;;;;;-1:-1:-1;9535:116:102;;;;;;;9525:126;;;;;-1:-1:-1;;;9525:126:102;;;-1:-1:-1;;;;;9525:126:102;;;9250:114;;-1:-1:-1;9758:89:102;;9250:114;;9788:15;:58;;9818:8;;:28;;-1:-1:-1;;;9818:28:102;;-1:-1:-1;;;;;1092:31:153;;9818:28:102;;;1074:50:153;-1:-1:-1;;;;;9818:16:102;;;;;;1047:18:153;;9818:28:102;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;9758:18;:89::i;9788:58::-;9806:9;9758:18;:89::i;:::-;8899:955;;8816:1038;;:::o;873:190:101:-;1047:8;-1:-1:-1;;;;;1011:45:101;1032:13;-1:-1:-1;;;;;1011:45:101;;;;;;;;;;;873:190;;:::o;14:144:153:-;-1:-1:-1;;;;;102:31:153;;92:42;;82:70;;148:1;145;138:12;163:458;289:6;297;350:2;338:9;329:7;325:23;321:32;318:52;;;366:1;363;356:12;318:52;398:9;392:16;417:44;455:5;417:44;:::i;:::-;530:2;515:18;;509:25;480:5;;-1:-1:-1;543:46:153;509:25;543:46;:::i;:::-;608:7;598:17;;;163:458;;;;;:::o;1135:264::-;1205:6;1258:2;1246:9;1237:7;1233:23;1229:32;1226:52;;;1274:1;1271;1264:12;1226:52;1306:9;1300:16;1325:44;1363:5;1325:44;:::i;:::-;1388:5;1135:264;-1:-1:-1;;;1135:264:153:o;:::-;198:867:101;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c8063a220d6961161005b578063a220d696146100f6578063ad007d6314610109578063ba23c36e14610130578063f2fde38b1461019057600080fd5b806361aec7a91461008d578063715018a6146100a25780638b79543c146100aa5780638da5cb5b146100ee575b600080fd5b6100a061009b3660046108c0565b6101a3565b005b6100a06101b7565b6100d17f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020015b60405180910390f35b6100d16101cc565b6100a06101043660046108ea565b6102b9565b6100d17f000000000000000000000000000000000000000000000000000000000000000081565b600054610160906001600160a01b03811690600160a01b81046001600160581b031690600160f81b900460ff1683565b604080516001600160a01b0390941684526001600160581b03909216602084015260ff16908201526060016100e5565b6100a061019e366004610918565b61030c565b6101ab610358565b6101b481610466565b50565b6101bf610358565b6101ca6000806104bc565b565b60408051606081018252600080546001600160a01b0381168352600160a01b81046001600160581b031660208401819052600160f81b90910460ff169383019390935291820361021c5751919050565b60208101516040516331a9108f60e11b81526001600160581b0390911660048201527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031690636352211e90602401602060405180830381865afa15801561028f573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102b39190610935565b91505090565b6102c1610358565b8015806102d457506001600160581b0381115b15610301576040516324abfd1160e11b815260006004820152602481018290526044015b60405180910390fd5b6101b46000826104bc565b610314610358565b6001600160a01b03811661034d576040516324abfd1160e11b81526001600160a01b0382166004820152600060248201526044016102f8565b6101b48160006104bc565b60408051606081018252600080546001600160a01b0381168352600160a01b81046001600160581b031660208401819052600160f81b90910460ff169383019390935290911561043e5760208201516040516331a9108f60e11b81526001600160581b0390911660048201527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031690636352211e90602401602060405180830381865afa158015610415573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906104399190610935565b610441565b81515b90506104628183602001516001600160581b0316846040015160ff166106fe565b5050565b600080546001600160f81b0316600160f81b60ff8416908102919091179091556040519081527f197cbe84f592e417694036927858418efc958896363c034f9aaa25af88953beb9060200160405180910390a150565b6001600160581b038116158015906104dc57506001600160a01b03821615155b15610514576040516324abfd1160e11b81526001600160a01b03831660048201526001600160581b03821660248201526044016102f8565b60408051606081018252600080546001600160a01b0381168352600160a01b81046001600160581b031660208401819052600160f81b90910460ff16938301939093529091156105fa5760208201516040516331a9108f60e11b81526001600160581b0390911660048201527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031690636352211e90602401602060405180830381865afa1580156105d1573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906105f59190610935565b6105fd565b81515b604080516060810182526001600160a01b0387168082526001600160581b0387166020830181905260009290930182905281546001600160f81b03191617600160a01b8302176001600160f81b031690559091506106f8908290156106f2576040516331a9108f60e11b81526001600160581b03861660048201527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031690636352211e90602401602060405180830381865afa1580156106c9573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106ed9190610935565b61087c565b8561087c565b50505050565b336001600160a01b03841681148015906107b5575060405163c161c93f60e01b81526001600160a01b038281166004830152858116602483015260448201859052606482018490527f0000000000000000000000000000000000000000000000000000000000000000169063c161c93f90608401602060405180830381865afa15801561078f573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906107b39190610952565b155b801561085e575060405163c161c93f60e01b81526001600160a01b038281166004830152858116602483015260006044830152606482018490527f0000000000000000000000000000000000000000000000000000000000000000169063c161c93f90608401602060405180830381865afa158015610838573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061085c9190610952565b155b156106f85760405163075fd2b160e01b815260040160405180910390fd5b806001600160a01b0316826001600160a01b03167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a35050565b6000602082840312156108d257600080fd5b813560ff811681146108e357600080fd5b9392505050565b6000602082840312156108fc57600080fd5b5035919050565b6001600160a01b03811681146101b457600080fd5b60006020828403121561092a57600080fd5b81356108e381610903565b60006020828403121561094757600080fd5b81516108e381610903565b60006020828403121561096457600080fd5b815180151581146108e357600080fdfea26469706673582212202df5bf03df1718d3a8cb07a8905c0bfd2a7ada50a60f8393e27d3ae76214682164736f6c63430008140033",
+    "sourceMap": "198:867:101:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7354:144:102;;;;;;:::i;:::-;;:::i;:::-;;6062:117;;;:::i;1943:37::-;;;;;;;;-1:-1:-1;;;;;473:32:153;;;455:51;;443:2;428:18;1943:37:102;;;;;;;;5465:239;;;:::i;6847:285::-;;;;;;:::i;:::-;;:::i;1796:47::-;;;;;2284:31;;;;;-1:-1:-1;;;;;2284:31:102;;;-1:-1:-1;;;2284:31:102;;-1:-1:-1;;;;;2284:31:102;;-1:-1:-1;;;2284:31:102;;;;;;;;;;-1:-1:-1;;;;;1358:32:153;;;1340:51;;-1:-1:-1;;;;;1427:37:153;;;1422:2;1407:18;;1400:65;1513:4;1501:17;1481:18;;;1474:45;1328:2;1313:18;2284:31:102;1144:381:153;6404:234:102;;;;;;:::i;:::-;;:::i;7354:144::-;7431:13;:11;:13::i;:::-;7454:37;7474:16;7454:19;:37::i;:::-;7354:144;:::o;6062:117::-;6116:13;:11;:13::i;:::-;6139:33;6166:1;6170;6139:18;:33::i;:::-;6062:117::o;5465:239::-;5530:35;;;;;;;;-1:-1:-1;5530:35:102;;-1:-1:-1;;;;;5530:35:102;;;;-1:-1:-1;;;5530:35:102;;-1:-1:-1;;;;;5530:35:102;;;;;;;-1:-1:-1;;;5530:35:102;;;;;;;;;;;;-1:-1:-1;5579:25:102;;5576:65;;5625:16;;5465:239;-1:-1:-1;5465:239:102:o;5576:65::-;5676:20;;;;5659:38;;-1:-1:-1;;;5659:38:102;;-1:-1:-1;;;;;2081:37:153;;;5659:38:102;;;2063:56:153;5659:8:102;-1:-1:-1;;;;;5659:16:102;;;;2036:18:153;;5659:38:102;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;5652:45;;;5465:239;:::o;6847:285::-;6928:13;:11;:13::i;:::-;6954:15;;;:48;;-1:-1:-1;;;;;;6973:29:102;;6954:48;6951:113;;;7023:41;;-1:-1:-1;;;7023:41:102;;7049:1;7023:41;;;2560:51:153;2627:18;;;2620:34;;;2533:18;;7023:41:102;;;;;;;;6951:113;7075:50;7102:1;7113:10;7075:18;:50::i;6404:234::-;6475:13;:11;:13::i;:::-;-1:-1:-1;;;;;6501:23:102;;6498:78;;6545:31;;-1:-1:-1;;;6545:31:102;;-1:-1:-1;;;;;2578:32:153;;6545:31:102;;;2560:51:153;6574:1:102;2627:18:153;;;2620:34;2533:18;;6545:31:102;2386:274:153;6498:78:102;6599:32;6618:9;6629:1;6599:18;:32::i;10162:314::-;10217:35;;;;;;;;-1:-1:-1;10217:35:102;;-1:-1:-1;;;;;10217:35:102;;;;-1:-1:-1;;;10217:35:102;;-1:-1:-1;;;;;10217:35:102;;;;;;;-1:-1:-1;;;10217:35:102;;;;;;;;;;;;;;10280:25;:94;;10353:20;;;;10336:38;;-1:-1:-1;;;10336:38:102;;-1:-1:-1;;;;;2081:37:153;;;10336:38:102;;;2063:56:153;10336:8:102;-1:-1:-1;;;;;10336:16:102;;;;2036:18:153;;10336:38:102;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;10280:94;;;10317:16;;10280:94;10263:111;;10393:76;10412:6;10420:10;:20;;;-1:-1:-1;;;;;10393:76:102;10442:10;:26;;;10393:76;;:18;:76::i;:::-;10207:269;;10162:314::o;8006:184::-;8086:7;:42;;-1:-1:-1;;;;;8086:42:102;-1:-1:-1;;;8086:42:102;;;;;;;;;;;;;8143:40;;3094:36:153;;;8143:40:102;;3082:2:153;3067:18;8143:40:102;;;;;;;8006:184;:::o;8816:1038::-;-1:-1:-1;;;;;8989:15:102;;;;;;:42;;-1:-1:-1;;;;;;9008:23:102;;;;8989:42;8985:107;;;9052:40;;-1:-1:-1;;;9052:40:102;;-1:-1:-1;;;;;3332:32:153;;9052:40:102;;;3314:51:153;-1:-1:-1;;;;;3401:37:153;;3381:18;;;3374:65;3287:18;;9052:40:102;3141:304:153;8985:107:102;9147:35;;;;;;;;-1:-1:-1;9147:35:102;;-1:-1:-1;;;;;9147:35:102;;;;-1:-1:-1;;;9147:35:102;;-1:-1:-1;;;;;9147:35:102;;;;;;;-1:-1:-1;;;9147:35:102;;;;;;;;;;;;;;9270:25;:94;;9343:20;;;;9326:38;;-1:-1:-1;;;9326:38:102;;-1:-1:-1;;;;;2081:37:153;;;9326:38:102;;;2063:56:153;9326:8:102;-1:-1:-1;;;;;9326:16:102;;;;2036:18:153;;9326:38:102;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;9270:94;;;9307:16;;9270:94;9535:116;;;;;;;;-1:-1:-1;;;;;9535:116:102;;;;;-1:-1:-1;;;;;9535:116:102;;;;;;;;-1:-1:-1;9535:116:102;;;;;;;9525:126;;-1:-1:-1;;;;;;9525:126:102;;-1:-1:-1;;;9525:126:102;;;-1:-1:-1;;;;;9525:126:102;;;9250:114;;-1:-1:-1;9758:89:102;;9250:114;;9788:15;:58;;9818:28;;-1:-1:-1;;;9818:28:102;;-1:-1:-1;;;;;2081:37:153;;9818:28:102;;;2063:56:153;9818:8:102;-1:-1:-1;;;;;9818:16:102;;;;2036:18:153;;9818:28:102;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;9758:18;:89::i;9788:58::-;9806:9;9758:18;:89::i;:::-;8899:955;;8816:1038;;:::o;10844:518::-;719:10:127;-1:-1:-1;;;;;11052:19:102;;;;;;;:187;;-1:-1:-1;11088:151:102;;-1:-1:-1;;;11088:151:102;;-1:-1:-1;;;;;3737:15:153;;;11088:151:102;;;3719:34:153;3789:15;;;3769:18;;;3762:43;3821:18;;;3814:34;;;3864:18;;;3857:34;;;11088:13:102;:27;;;;3653:19:153;;11088:151:102;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;11087:152;11052:187;:271;;;;-1:-1:-1;11256:67:102;;-1:-1:-1;;;11256:67:102;;-1:-1:-1;;;;;3737:15:153;;;11256:67:102;;;3719:34:153;3789:15;;;3769:18;;;3762:43;11303:1:102;3821:18:153;;;3814:34;3864:18;;;3857:34;;;11256:13:102;:27;;;;3653:19:153;;11256:67:102;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;11255:68;11052:271;11035:320;;;11341:14;;-1:-1:-1;;;11341:14:102;;;;;;;;;;;873:190:101;1047:8;-1:-1:-1;;;;;1011:45:101;1032:13;-1:-1:-1;;;;;1011:45:101;;;;;;;;;;;873:190;;:::o;14:269:153:-;71:6;124:2;112:9;103:7;99:23;95:32;92:52;;;140:1;137;130:12;92:52;179:9;166:23;229:4;222:5;218:16;211:5;208:27;198:55;;249:1;246;239:12;198:55;272:5;14:269;-1:-1:-1;;;14:269:153:o;725:180::-;784:6;837:2;825:9;816:7;812:23;808:32;805:52;;;853:1;850;843:12;805:52;-1:-1:-1;876:23:153;;725:180;-1:-1:-1;725:180:153:o;1530:131::-;-1:-1:-1;;;;;1605:31:153;;1595:42;;1585:70;;1651:1;1648;1641:12;1666:247;1725:6;1778:2;1766:9;1757:7;1753:23;1749:32;1746:52;;;1794:1;1791;1784:12;1746:52;1833:9;1820:23;1852:31;1877:5;1852:31;:::i;2130:251::-;2200:6;2253:2;2241:9;2232:7;2228:23;2224:32;2221:52;;;2269:1;2266;2259:12;2221:52;2301:9;2295:16;2320:31;2345:5;2320:31;:::i;3902:277::-;3969:6;4022:2;4010:9;4001:7;3997:23;3993:32;3990:52;;;4038:1;4035;4028:12;3990:52;4070:9;4064:16;4123:5;4116:13;4109:21;4102:5;4099:32;4089:60;;4145:1;4142;4135:12",
+    "linkReferences": {},
+    "immutableReferences": {
+      "42290": [
+        {
+          "start": 270,
+          "length": 32
+        },
+        {
+          "start": 1864,
+          "length": 32
+        },
+        {
+          "start": 2033,
+          "length": 32
+        }
+      ],
+      "42294": [
+        {
+          "start": 175,
+          "length": 32
+        },
+        {
+          "start": 576,
+          "length": 32
+        },
+        {
+          "start": 966,
+          "length": 32
+        },
+        {
+          "start": 1410,
+          "length": 32
+        },
+        {
+          "start": 1658,
+          "length": 32
+        }
+      ]
+    }
+  },
+  "methodIdentifiers": {
+    "jbOwner()": "ba23c36e",
+    "operatorStore()": "ad007d63",
+    "owner()": "8da5cb5b",
+    "projects()": "8b79543c",
+    "renounceOwnership()": "715018a6",
+    "setPermissionIndex(uint8)": "61aec7a9",
+    "transferOwnership(address)": "f2fde38b",
+    "transferOwnershipToProject(uint256)": "a220d696"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IJBProjects\",\"name\":\"_projects\",\"type\":\"address\"},{\"internalType\":\"contract IJBOperatorStore\",\"name\":\"_operatorStore\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"ownerAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"projectId\",\"type\":\"uint256\"}],\"name\":\"INVALID_NEW_OWNER\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"UNAUTHORIZED\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"newIndex\",\"type\":\"uint8\"}],\"name\":\"PermissionIndexChanged\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"jbOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint88\",\"name\":\"projectId\",\"type\":\"uint88\"},{\"internalType\":\"uint8\",\"name\":\"permissionIndex\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"operatorStore\",\"outputs\":[{\"internalType\":\"contract IJBOperatorStore\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"projects\",\"outputs\":[{\"internalType\":\"contract IJBProjects\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_permissionIndex\",\"type\":\"uint8\"}],\"name\":\"setPermissionIndex\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_projectId\",\"type\":\"uint256\"}],\"name\":\"transferOwnershipToProject\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"constructor\":{\"params\":{\"_operatorStore\":\"the operatorStore to use for the permissions\",\"_projects\":\"the JBProjects to use to get the owner of the project\"}},\"setPermissionIndex(uint8)\":{\"params\":{\"_permissionIndex\":\"the permissionIndex to use for 'onlyOwner' calls\"}},\"transferOwnership(address)\":{\"params\":{\"_newOwner\":\"the static address that should receive ownership\"}},\"transferOwnershipToProject(uint256)\":{\"details\":\"ProjectID is limited to a uint88\",\"params\":{\"_projectId\":\"the project that should receive ownership\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"jbOwner()\":{\"notice\":\"the JBOwner information\"},\"operatorStore()\":{\"notice\":\" A contract storing operator assignments.\"},\"owner()\":{\"notice\":\"Returns the address of the current project owner.\"},\"projects()\":{\"notice\":\"The IJBProjects to use to get the owner of a project\"},\"renounceOwnership()\":{\"notice\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner`/`_checkOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"setPermissionIndex(uint8)\":{\"notice\":\"Sets the permission index that allows other callers to perform operations on behave of the project owner\"},\"transferOwnership(address)\":{\"notice\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"},\"transferOwnershipToProject(uint256)\":{\"notice\":\"Transfer ownershipt of the contract to a (Juicebox) project\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@jbx-protocol/juice-ownable/src/JBOwnable.sol\":\"JBOwnable\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@ensdomains/=node_modules/@ensdomains/\",\":@jbx-protocol/=node_modules/@jbx-protocol/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@paulrberg/=node_modules/@paulrberg/\",\":@prb/=node_modules/@prb/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":prb-math/=node_modules/prb-math/\"]},\"sources\":{\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/abstract/JBOperatable.sol\":{\"keccak256\":\"0xed3071b63f3ac427ffcd357a53be2675d405e94e40a7b1bc0475054005807e91\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://863ff322425326c94dcd78390ba4a71e06aedbb75d695b75396c247a7c3c430d\",\"dweb:/ipfs/QmayvC3ScEzb54M7TMDsChPgFeCmyKVtRKhZ9JUNFfoiSB\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBOperatable.sol\":{\"keccak256\":\"0xe083d0c1b181e5c38cf3f03f97dd782f913710bf8cc54411eb4b6e7ec4c5a0c8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://05179c1749c2fa1d1f80b02fb7e762b34056d5d5f6226ad572e7269513594840\",\"dweb:/ipfs/QmPhpZsuUPXwFxm9tqmE2jF523MehApdRgVwz9WLpmQHHy\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBOperatorStore.sol\":{\"keccak256\":\"0xb6ce539d040601d7e4b1cec567c64d93e5b14d5fa249e04dd67cf222c4431678\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://53e8191663b917b3b09e318cdd0863a26c22e65ebb7873a38ad0c5785776cc1d\",\"dweb:/ipfs/QmYybeqPeJQjEtFUStsnALVUfVGoW5CwfCJAH7t7gN5Dho\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBProjects.sol\":{\"keccak256\":\"0x00235f20975e6a9465ac921076c85125a3834e29893f93f93e287a89f9e6b915\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f5e2f3a47fe0d95439504b4c6e80b76e19301acfe1e2d080b2ea949fafd9c176\",\"dweb:/ipfs/QmNSAJa8XHuDMrg88HJybBhoYUKRC9hQ6ku3C1Dak8Fntg\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBTokenUriResolver.sol\":{\"keccak256\":\"0xc7c9537184a1a36bc30874e5ac29b0fbccf45a99d40806837cfe30d6d9a1c84a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://073271efd14bd4aa04735252b095f11406d61f598b5e59c4127596c99079543d\",\"dweb:/ipfs/QmdgeFg6emo3UGXdn8qXDs2dAeVoLpPjd84KoxyjgsFphr\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBOperatorData.sol\":{\"keccak256\":\"0x77fba183d08748c7b75a12425f987b1b48f6bbfec0284517ffaf261429b45a7c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://08c870518270a25e8854be56328013c04930c3a641517b097798c0f69ee79cfe\",\"dweb:/ipfs/QmVRVX3D5LkuEhh9ctn95qPiAgJ2SpVtZrtUDYsBF9s2wR\"]},\"node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBProjectMetadata.sol\":{\"keccak256\":\"0x9545ea42927f3451c9d901a2f7ab7c1aeef3242e5ed2b75521a90225a5a0f891\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://345e020cbe67914c3d804526db23c4f878eb2f106454644a8899fba0815941e5\",\"dweb:/ipfs/Qmd8dJmVebmssCkEsHyytRNTy7KcbmggQ9vqD7i8NwWdHL\"]},\"node_modules/@jbx-protocol/juice-ownable/src/JBOwnable.sol\":{\"keccak256\":\"0x9a8862ededd04fca6a11c986ac1182d0dd177b089fff151d74bbdfbb8cfaf52b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://835a22a49183bc858de1a4a37b0802d855451fdcbf5cfdd2040f48733e451d03\",\"dweb:/ipfs/Qme9aGkgSY7T8iqMztftRPdP2uzGGUhTNMxbBGBB8NWrwH\"]},\"node_modules/@jbx-protocol/juice-ownable/src/JBOwnableOverrides.sol\":{\"keccak256\":\"0x8d5b2697ab212df3805fc53a2595968d232a769296f8447f4a8d986549ce1663\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://98fe43d831d67878351d2d50ebd414ed1205760b4143d29a4589df1eb40b3357\",\"dweb:/ipfs/QmcqoynXY3SqCpN642BQGRosdGeCzf17Es83y3PPnECej5\"]},\"node_modules/@jbx-protocol/juice-ownable/src/interfaces/IJBOwnable.sol\":{\"keccak256\":\"0x2e55c8895a758ed89f73ab589f2aafd47bda078a8c1848be4f9d89b03ee06253\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cbb2e4a2d308b315b6085fd896d3a138f3b6851ba491447689066a4968cf9d6d\",\"dweb:/ipfs/QmQJayqKc52LdZN3jP8tVHsJsJevg7Ha7kEG8eA6ZNRerG\"]},\"node_modules/@jbx-protocol/juice-ownable/src/struct/JBOwner.sol\":{\"keccak256\":\"0xe9c1266c1e079ba36d1e0e4340c69870c0fd5a64c95571761997f386a02b04d0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ab5058e2668889e7babf7dcab5b44a232a4cbaf41633bfff9d28bc0b9ff75a97\",\"dweb:/ipfs/QmNP68NkHLfn5c46PoJi7DRkNS4W1fwPV1RMzfAkgGrgNP\"]},\"node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x5bce51e11f7d194b79ea59fe00c9e8de9fa2c5530124960f29a24d4c740a3266\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7e66dfde185df46104c11bc89d08fa0760737aa59a2b8546a656473d810a8ea4\",\"dweb:/ipfs/QmXvyqtXPaPss2PD7eqPoSao5Szm2n6UMoiG8TZZDjmChR\"]},\"node_modules/@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92\",\"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3\"]},\"node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract IJBProjects",
+              "name": "_projects",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IJBOperatorStore",
+              "name": "_operatorStore",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "ownerAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "projectId",
+              "type": "uint256"
+            }
+          ],
+          "type": "error",
+          "name": "INVALID_NEW_OWNER"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "UNAUTHORIZED"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "OwnershipTransferred",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "newIndex",
+              "type": "uint8",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "PermissionIndexChanged",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "jbOwner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint88",
+              "name": "projectId",
+              "type": "uint88"
+            },
+            {
+              "internalType": "uint8",
+              "name": "permissionIndex",
+              "type": "uint8"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "operatorStore",
+          "outputs": [
+            {
+              "internalType": "contract IJBOperatorStore",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "projects",
+          "outputs": [
+            {
+              "internalType": "contract IJBProjects",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "renounceOwnership"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "_permissionIndex",
+              "type": "uint8"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setPermissionIndex"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_newOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "transferOwnership"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_projectId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "transferOwnershipToProject"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "constructor": {
+            "params": {
+              "_operatorStore": "the operatorStore to use for the permissions",
+              "_projects": "the JBProjects to use to get the owner of the project"
+            }
+          },
+          "setPermissionIndex(uint8)": {
+            "params": {
+              "_permissionIndex": "the permissionIndex to use for 'onlyOwner' calls"
+            }
+          },
+          "transferOwnership(address)": {
+            "params": {
+              "_newOwner": "the static address that should receive ownership"
+            }
+          },
+          "transferOwnershipToProject(uint256)": {
+            "details": "ProjectID is limited to a uint88",
+            "params": {
+              "_projectId": "the project that should receive ownership"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "jbOwner()": {
+            "notice": "the JBOwner information"
+          },
+          "operatorStore()": {
+            "notice": " A contract storing operator assignments."
+          },
+          "owner()": {
+            "notice": "Returns the address of the current project owner."
+          },
+          "projects()": {
+            "notice": "The IJBProjects to use to get the owner of a project"
+          },
+          "renounceOwnership()": {
+            "notice": "Leaves the contract without owner. It will not be possible to call `onlyOwner`/`_checkOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+          },
+          "setPermissionIndex(uint8)": {
+            "notice": "Sets the permission index that allows other callers to perform operations on behave of the project owner"
+          },
+          "transferOwnership(address)": {
+            "notice": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+          },
+          "transferOwnershipToProject(uint256)": {
+            "notice": "Transfer ownershipt of the contract to a (Juicebox) project"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@chainlink/=node_modules/@chainlink/",
+        ":@ensdomains/=node_modules/@ensdomains/",
+        ":@jbx-protocol/=node_modules/@jbx-protocol/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@paulrberg/=node_modules/@paulrberg/",
+        ":@prb/=node_modules/@prb/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":prb-math/=node_modules/prb-math/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@jbx-protocol/juice-ownable/src/JBOwnable.sol": "JBOwnable"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@jbx-protocol/juice-contracts-v3/contracts/abstract/JBOperatable.sol": {
+        "keccak256": "0xed3071b63f3ac427ffcd357a53be2675d405e94e40a7b1bc0475054005807e91",
+        "urls": [
+          "bzz-raw://863ff322425326c94dcd78390ba4a71e06aedbb75d695b75396c247a7c3c430d",
+          "dweb:/ipfs/QmayvC3ScEzb54M7TMDsChPgFeCmyKVtRKhZ9JUNFfoiSB"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBOperatable.sol": {
+        "keccak256": "0xe083d0c1b181e5c38cf3f03f97dd782f913710bf8cc54411eb4b6e7ec4c5a0c8",
+        "urls": [
+          "bzz-raw://05179c1749c2fa1d1f80b02fb7e762b34056d5d5f6226ad572e7269513594840",
+          "dweb:/ipfs/QmPhpZsuUPXwFxm9tqmE2jF523MehApdRgVwz9WLpmQHHy"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBOperatorStore.sol": {
+        "keccak256": "0xb6ce539d040601d7e4b1cec567c64d93e5b14d5fa249e04dd67cf222c4431678",
+        "urls": [
+          "bzz-raw://53e8191663b917b3b09e318cdd0863a26c22e65ebb7873a38ad0c5785776cc1d",
+          "dweb:/ipfs/QmYybeqPeJQjEtFUStsnALVUfVGoW5CwfCJAH7t7gN5Dho"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBProjects.sol": {
+        "keccak256": "0x00235f20975e6a9465ac921076c85125a3834e29893f93f93e287a89f9e6b915",
+        "urls": [
+          "bzz-raw://f5e2f3a47fe0d95439504b4c6e80b76e19301acfe1e2d080b2ea949fafd9c176",
+          "dweb:/ipfs/QmNSAJa8XHuDMrg88HJybBhoYUKRC9hQ6ku3C1Dak8Fntg"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@jbx-protocol/juice-contracts-v3/contracts/interfaces/IJBTokenUriResolver.sol": {
+        "keccak256": "0xc7c9537184a1a36bc30874e5ac29b0fbccf45a99d40806837cfe30d6d9a1c84a",
+        "urls": [
+          "bzz-raw://073271efd14bd4aa04735252b095f11406d61f598b5e59c4127596c99079543d",
+          "dweb:/ipfs/QmdgeFg6emo3UGXdn8qXDs2dAeVoLpPjd84KoxyjgsFphr"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBOperatorData.sol": {
+        "keccak256": "0x77fba183d08748c7b75a12425f987b1b48f6bbfec0284517ffaf261429b45a7c",
+        "urls": [
+          "bzz-raw://08c870518270a25e8854be56328013c04930c3a641517b097798c0f69ee79cfe",
+          "dweb:/ipfs/QmVRVX3D5LkuEhh9ctn95qPiAgJ2SpVtZrtUDYsBF9s2wR"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@jbx-protocol/juice-contracts-v3/contracts/structs/JBProjectMetadata.sol": {
+        "keccak256": "0x9545ea42927f3451c9d901a2f7ab7c1aeef3242e5ed2b75521a90225a5a0f891",
+        "urls": [
+          "bzz-raw://345e020cbe67914c3d804526db23c4f878eb2f106454644a8899fba0815941e5",
+          "dweb:/ipfs/Qmd8dJmVebmssCkEsHyytRNTy7KcbmggQ9vqD7i8NwWdHL"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@jbx-protocol/juice-ownable/src/JBOwnable.sol": {
+        "keccak256": "0x9a8862ededd04fca6a11c986ac1182d0dd177b089fff151d74bbdfbb8cfaf52b",
+        "urls": [
+          "bzz-raw://835a22a49183bc858de1a4a37b0802d855451fdcbf5cfdd2040f48733e451d03",
+          "dweb:/ipfs/Qme9aGkgSY7T8iqMztftRPdP2uzGGUhTNMxbBGBB8NWrwH"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@jbx-protocol/juice-ownable/src/JBOwnableOverrides.sol": {
+        "keccak256": "0x8d5b2697ab212df3805fc53a2595968d232a769296f8447f4a8d986549ce1663",
+        "urls": [
+          "bzz-raw://98fe43d831d67878351d2d50ebd414ed1205760b4143d29a4589df1eb40b3357",
+          "dweb:/ipfs/QmcqoynXY3SqCpN642BQGRosdGeCzf17Es83y3PPnECej5"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@jbx-protocol/juice-ownable/src/interfaces/IJBOwnable.sol": {
+        "keccak256": "0x2e55c8895a758ed89f73ab589f2aafd47bda078a8c1848be4f9d89b03ee06253",
+        "urls": [
+          "bzz-raw://cbb2e4a2d308b315b6085fd896d3a138f3b6851ba491447689066a4968cf9d6d",
+          "dweb:/ipfs/QmQJayqKc52LdZN3jP8tVHsJsJevg7Ha7kEG8eA6ZNRerG"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@jbx-protocol/juice-ownable/src/struct/JBOwner.sol": {
+        "keccak256": "0xe9c1266c1e079ba36d1e0e4340c69870c0fd5a64c95571761997f386a02b04d0",
+        "urls": [
+          "bzz-raw://ab5058e2668889e7babf7dcab5b44a232a4cbaf41633bfff9d28bc0b9ff75a97",
+          "dweb:/ipfs/QmNP68NkHLfn5c46PoJi7DRkNS4W1fwPV1RMzfAkgGrgNP"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+        "keccak256": "0x5bce51e11f7d194b79ea59fe00c9e8de9fa2c5530124960f29a24d4c740a3266",
+        "urls": [
+          "bzz-raw://7e66dfde185df46104c11bc89d08fa0760737aa59a2b8546a656473d810a8ea4",
+          "dweb:/ipfs/QmXvyqtXPaPss2PD7eqPoSao5Szm2n6UMoiG8TZZDjmChR"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@openzeppelin/contracts/utils/Context.sol": {
+        "keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+        "urls": [
+          "bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+          "dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+        ],
+        "license": "MIT"
+      },
+      "node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+        "keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+        "urls": [
+          "bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
+          "dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@jbx-protocol/juice-ownable/src/JBOwnable.sol",
+    "id": 42258,
+    "exportedSymbols": {
+      "IJBOperatorStore": [
+        39182
+      ],
+      "IJBProjects": [
+        39864
+      ],
+      "JBOwnable": [
+        42257
+      ],
+      "JBOwnableOverrides": [
+        42725
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "78:988:101",
+    "nodes": [
+      {
+        "id": 42207,
+        "nodeType": "PragmaDirective",
+        "src": "78:23:101",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 42211,
+        "nodeType": "ImportDirective",
+        "src": "103:93:101",
+        "nodes": [],
+        "absolutePath": "node_modules/@jbx-protocol/juice-ownable/src/JBOwnableOverrides.sol",
+        "file": "./JBOwnableOverrides.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 42258,
+        "sourceUnit": 42726,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 42208,
+              "name": "JBOwnableOverrides",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 42725,
+              "src": "112:18:101",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 42209,
+              "name": "IJBProjects",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 39864,
+              "src": "132:11:101",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          },
+          {
+            "foreign": {
+              "id": 42210,
+              "name": "IJBOperatorStore",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 39182,
+              "src": "145:16:101",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 42257,
+        "nodeType": "ContractDefinition",
+        "src": "198:867:101",
+        "nodes": [
+          {
+            "id": 42219,
+            "nodeType": "EventDefinition",
+            "src": "245:106:101",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+            "name": "OwnershipTransferred",
+            "nameLocation": "251:20:101",
+            "parameters": {
+              "id": 42218,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42215,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "previousOwner",
+                  "nameLocation": "297:13:101",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42219,
+                  "src": "281:29:101",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 42214,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "281:7:101",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 42217,
+                  "indexed": true,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nameLocation": "336:8:101",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42219,
+                  "src": "320:24:101",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 42216,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "320:7:101",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "271:79:101"
+            }
+          },
+          {
+            "id": 42234,
+            "nodeType": "FunctionDefinition",
+            "src": "523:138:101",
+            "nodes": [],
+            "body": {
+              "id": 42233,
+              "nodeType": "Block",
+              "src": "659:2:101",
+              "nodes": [],
+              "statements": []
+            },
+            "documentation": {
+              "id": 42220,
+              "nodeType": "StructuredDocumentation",
+              "src": "357:161:101",
+              "text": "@param _projects the JBProjects to use to get the owner of the project\n@param _operatorStore the operatorStore to use for the permissions"
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 42229,
+                    "name": "_projects",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 42223,
+                    "src": "632:9:101",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IJBProjects_$39864",
+                      "typeString": "contract IJBProjects"
+                    }
+                  },
+                  {
+                    "id": 42230,
+                    "name": "_operatorStore",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 42226,
+                    "src": "643:14:101",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IJBOperatorStore_$39182",
+                      "typeString": "contract IJBOperatorStore"
+                    }
+                  }
+                ],
+                "id": 42231,
+                "kind": "baseConstructorSpecifier",
+                "modifierName": {
+                  "id": 42228,
+                  "name": "JBOwnableOverrides",
+                  "nameLocations": [
+                    "613:18:101"
+                  ],
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 42725,
+                  "src": "613:18:101"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "613:45:101"
+              }
+            ],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 42227,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42223,
+                  "mutability": "mutable",
+                  "name": "_projects",
+                  "nameLocation": "556:9:101",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42234,
+                  "src": "544:21:101",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IJBProjects_$39864",
+                    "typeString": "contract IJBProjects"
+                  },
+                  "typeName": {
+                    "id": 42222,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 42221,
+                      "name": "IJBProjects",
+                      "nameLocations": [
+                        "544:11:101"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 39864,
+                      "src": "544:11:101"
+                    },
+                    "referencedDeclaration": 39864,
+                    "src": "544:11:101",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IJBProjects_$39864",
+                      "typeString": "contract IJBProjects"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 42226,
+                  "mutability": "mutable",
+                  "name": "_operatorStore",
+                  "nameLocation": "592:14:101",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42234,
+                  "src": "575:31:101",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_IJBOperatorStore_$39182",
+                    "typeString": "contract IJBOperatorStore"
+                  },
+                  "typeName": {
+                    "id": 42225,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 42224,
+                      "name": "IJBOperatorStore",
+                      "nameLocations": [
+                        "575:16:101"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 39182,
+                      "src": "575:16:101"
+                    },
+                    "referencedDeclaration": 39182,
+                    "src": "575:16:101",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IJBOperatorStore_$39182",
+                      "typeString": "contract IJBOperatorStore"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "534:78:101"
+            },
+            "returnParameters": {
+              "id": 42232,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "659:0:101"
+            },
+            "scope": 42257,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 42242,
+            "nodeType": "ModifierDefinition",
+            "src": "797:70:101",
+            "nodes": [],
+            "body": {
+              "id": 42241,
+              "nodeType": "Block",
+              "src": "826:41:101",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 42237,
+                      "name": "_checkOwner",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 42654,
+                      "src": "836:11:101",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$__$",
+                        "typeString": "function () view"
+                      }
+                    },
+                    "id": 42238,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "836:13:101",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 42239,
+                  "nodeType": "ExpressionStatement",
+                  "src": "836:13:101"
+                },
+                {
+                  "id": 42240,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "859:1:101"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 42235,
+              "nodeType": "StructuredDocumentation",
+              "src": "667:125:101",
+              "text": " @dev Throws if called by an account that is not the owner and does not have permission to act as the owner"
+            },
+            "name": "onlyOwner",
+            "nameLocation": "806:9:101",
+            "parameters": {
+              "id": 42236,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "815:2:101"
+            },
+            "virtual": true,
+            "visibility": "internal"
+          },
+          {
+            "id": 42256,
+            "nodeType": "FunctionDefinition",
+            "src": "873:190:101",
+            "nodes": [],
+            "body": {
+              "id": 42255,
+              "nodeType": "Block",
+              "src": "996:67:101",
+              "nodes": [],
+              "statements": [
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 42251,
+                        "name": "previousOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 42244,
+                        "src": "1032:13:101",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 42252,
+                        "name": "newOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 42246,
+                        "src": "1047:8:101",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 42250,
+                      "name": "OwnershipTransferred",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 42219,
+                      "src": "1011:20:101",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$returns$__$",
+                        "typeString": "function (address,address)"
+                      }
+                    },
+                    "id": 42253,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1011:45:101",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 42254,
+                  "nodeType": "EmitStatement",
+                  "src": "1006:50:101"
+                }
+              ]
+            },
+            "baseFunctions": [
+              42724
+            ],
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_emitTransferEvent",
+            "nameLocation": "882:18:101",
+            "overrides": {
+              "id": 42248,
+              "nodeType": "OverrideSpecifier",
+              "overrides": [],
+              "src": "983:8:101"
+            },
+            "parameters": {
+              "id": 42247,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 42244,
+                  "mutability": "mutable",
+                  "name": "previousOwner",
+                  "nameLocation": "909:13:101",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42256,
+                  "src": "901:21:101",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 42243,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "901:7:101",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 42246,
+                  "mutability": "mutable",
+                  "name": "newOwner",
+                  "nameLocation": "932:8:101",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 42256,
+                  "src": "924:16:101",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 42245,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "924:7:101",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "900:41:101"
+            },
+            "returnParameters": {
+              "id": 42249,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "996:0:101"
+            },
+            "scope": 42257,
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 42212,
+              "name": "JBOwnableOverrides",
+              "nameLocations": [
+                "220:18:101"
+              ],
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 42725,
+              "src": "220:18:101"
+            },
+            "id": 42213,
+            "nodeType": "InheritanceSpecifier",
+            "src": "220:18:101"
+          }
+        ],
+        "canonicalName": "JBOwnable",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          42257,
+          42725,
+          39113,
+          42751,
+          48366
+        ],
+        "name": "JBOwnable",
+        "nameLocation": "207:9:101",
+        "scope": 42258,
+        "usedErrors": [
+          42280,
+          42286
+        ],
+        "usedEvents": [
+          42219,
+          42731
+        ]
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 101
+}

@@ -1,0 +1,139 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "node_modules/@jbx-protocol/juice-ownable/src/struct/JBOwner.sol",
+    "id": 29388,
+    "exportedSymbols": {
+      "JBOwner": [
+        29387
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:404:60",
+    "nodes": [
+      {
+        "id": 29379,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:60",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 29387,
+        "nodeType": "StructDefinition",
+        "src": "350:86:60",
+        "nodes": [],
+        "canonicalName": "JBOwner",
+        "documentation": {
+          "id": 29380,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:292:60",
+          "text": "@member owner if set then the contract belongs to this static address.\n@member projectId if set then the contract belongs to whatever address owns the project\n@member permissionIndex the permission that is required on the specified project to act as the owner for this contract."
+        },
+        "members": [
+          {
+            "constant": false,
+            "id": 29382,
+            "mutability": "mutable",
+            "name": "owner",
+            "nameLocation": "379:5:60",
+            "nodeType": "VariableDeclaration",
+            "scope": 29387,
+            "src": "371:13:60",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 29381,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "371:7:60",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 29384,
+            "mutability": "mutable",
+            "name": "projectId",
+            "nameLocation": "397:9:60",
+            "nodeType": "VariableDeclaration",
+            "scope": 29387,
+            "src": "390:16:60",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint88",
+              "typeString": "uint88"
+            },
+            "typeName": {
+              "id": 29383,
+              "name": "uint88",
+              "nodeType": "ElementaryTypeName",
+              "src": "390:6:60",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint88",
+                "typeString": "uint88"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 29386,
+            "mutability": "mutable",
+            "name": "permissionIndex",
+            "nameLocation": "418:15:60",
+            "nodeType": "VariableDeclaration",
+            "scope": 29387,
+            "src": "412:21:60",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint8",
+              "typeString": "uint8"
+            },
+            "typeName": {
+              "id": 29385,
+              "name": "uint8",
+              "nodeType": "ElementaryTypeName",
+              "src": "412:5:60",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint8",
+                "typeString": "uint8"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "JBOwner",
+        "nameLocation": "357:7:60",
+        "scope": 29388,
+        "visibility": "public"
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 60
+}

@@ -46,7 +46,7 @@ contract MyDelegateTest_Int is TestBaseWorkflowV3 {
     uint256 reservedRate = 4500;
 
     // Used in JBFundingCycleData
-    uint256 weight = 10 ** 18; // Minting 1 token per eth
+    uint256 weight = 9e17; // Minting 1 token per eth
 
     function setUp() public override {
         // Provides us with _jbOperatorStore and _jbETHPaymentTerminal
@@ -64,7 +64,7 @@ contract MyDelegateTest_Int is TestBaseWorkflowV3 {
         delegatesRegistry = new JBDelegatesRegistry(IJBDelegatesRegistry(address(0)));
 
         // Instance of our delegate code
-        _delegateImpl = new MyDelegate(110,1e17,4e17,120,5e17,1e18,130,1e18,1e21);
+        _delegateImpl = new MyDelegate(1e17,4e17,110,5e17,1e17,120,1e18,1e21,130);
 
         // Required for our custom project deployer below, eventually attaches the delegate to the funding cycle.
         _delegateDepl = new MyDelegateDeployer(_delegateImpl, delegatesRegistry);

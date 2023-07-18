@@ -1,0 +1,513 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "newIndex",
+          "type": "uint8"
+        }
+      ],
+      "name": "PermissionIndexChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "jbOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint88",
+          "name": "projectOwner",
+          "type": "uint88"
+        },
+        {
+          "internalType": "uint8",
+          "name": "permissionIndex",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint8",
+          "name": "_permissionIndex",
+          "type": "uint8"
+        }
+      ],
+      "name": "setPermissionIndex",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_projectId",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferOwnershipToProject",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "jbOwner()": "ba23c36e",
+    "setPermissionIndex(uint8)": "61aec7a9",
+    "transferOwnershipToProject(uint256)": "a220d696"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"newIndex\",\"type\":\"uint8\"}],\"name\":\"PermissionIndexChanged\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"jbOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint88\",\"name\":\"projectOwner\",\"type\":\"uint88\"},{\"internalType\":\"uint8\",\"name\":\"permissionIndex\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"_permissionIndex\",\"type\":\"uint8\"}],\"name\":\"setPermissionIndex\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_projectId\",\"type\":\"uint256\"}],\"name\":\"transferOwnershipToProject\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"node_modules/@jbx-protocol/juice-ownable/src/interfaces/IJBOwnable.sol\":\"IJBOwnable\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@jbx-protocol/=node_modules/@jbx-protocol/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":@paulrberg/=node_modules/@paulrberg/\",\":@prb/=node_modules/@prb/\",\":ds-test/=lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\",\":prb-math/=node_modules/prb-math/\"]},\"sources\":{\"node_modules/@jbx-protocol/juice-ownable/src/interfaces/IJBOwnable.sol\":{\"keccak256\":\"0x2e55c8895a758ed89f73ab589f2aafd47bda078a8c1848be4f9d89b03ee06253\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cbb2e4a2d308b315b6085fd896d3a138f3b6851ba491447689066a4968cf9d6d\",\"dweb:/ipfs/QmQJayqKc52LdZN3jP8tVHsJsJevg7Ha7kEG8eA6ZNRerG\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "newIndex",
+              "type": "uint8",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "PermissionIndexChanged",
+          "anonymous": false
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "jbOwner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint88",
+              "name": "projectOwner",
+              "type": "uint88"
+            },
+            {
+              "internalType": "uint8",
+              "name": "permissionIndex",
+              "type": "uint8"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "_permissionIndex",
+              "type": "uint8"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setPermissionIndex"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_projectId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "transferOwnershipToProject"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":@jbx-protocol/=node_modules/@jbx-protocol/",
+        ":@openzeppelin/=node_modules/@openzeppelin/",
+        ":@paulrberg/=node_modules/@paulrberg/",
+        ":@prb/=node_modules/@prb/",
+        ":ds-test/=lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/",
+        ":prb-math/=node_modules/prb-math/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "node_modules/@jbx-protocol/juice-ownable/src/interfaces/IJBOwnable.sol": "IJBOwnable"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "node_modules/@jbx-protocol/juice-ownable/src/interfaces/IJBOwnable.sol": {
+        "keccak256": "0x2e55c8895a758ed89f73ab589f2aafd47bda078a8c1848be4f9d89b03ee06253",
+        "urls": [
+          "bzz-raw://cbb2e4a2d308b315b6085fd896d3a138f3b6851ba491447689066a4968cf9d6d",
+          "dweb:/ipfs/QmQJayqKc52LdZN3jP8tVHsJsJevg7Ha7kEG8eA6ZNRerG"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "node_modules/@jbx-protocol/juice-ownable/src/interfaces/IJBOwnable.sol",
+    "id": 29378,
+    "exportedSymbols": {
+      "IJBOwnable": [
+        29377
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:538:59",
+    "nodes": [
+      {
+        "id": 29353,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:59",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 29377,
+        "nodeType": "ContractDefinition",
+        "src": "57:512:59",
+        "nodes": [
+          {
+            "id": 29357,
+            "nodeType": "EventDefinition",
+            "src": "207:45:59",
+            "nodes": [],
+            "anonymous": false,
+            "eventSelector": "197cbe84f592e417694036927858418efc958896363c034f9aaa25af88953beb",
+            "name": "PermissionIndexChanged",
+            "nameLocation": "213:22:59",
+            "parameters": {
+              "id": 29356,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 29355,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "newIndex",
+                  "nameLocation": "242:8:59",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29357,
+                  "src": "236:14:59",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 29354,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "236:5:59",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "235:16:59"
+            }
+          },
+          {
+            "id": 29366,
+            "nodeType": "FunctionDefinition",
+            "src": "258:171:59",
+            "nodes": [],
+            "functionSelector": "ba23c36e",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "jbOwner",
+            "nameLocation": "267:7:59",
+            "parameters": {
+              "id": 29358,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "274:2:59"
+            },
+            "returnParameters": {
+              "id": 29365,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 29360,
+                  "mutability": "mutable",
+                  "name": "owner",
+                  "nameLocation": "345:5:59",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29366,
+                  "src": "337:13:59",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 29359,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "337:7:59",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 29362,
+                  "mutability": "mutable",
+                  "name": "projectOwner",
+                  "nameLocation": "371:12:59",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29366,
+                  "src": "364:19:59",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint88",
+                    "typeString": "uint88"
+                  },
+                  "typeName": {
+                    "id": 29361,
+                    "name": "uint88",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "364:6:59",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint88",
+                      "typeString": "uint88"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 29364,
+                  "mutability": "mutable",
+                  "name": "permissionIndex",
+                  "nameLocation": "403:15:59",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29366,
+                  "src": "397:21:59",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 29363,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "397:5:59",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "323:105:59"
+            },
+            "scope": 29377,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 29371,
+            "nodeType": "FunctionDefinition",
+            "src": "435:65:59",
+            "nodes": [],
+            "functionSelector": "a220d696",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferOwnershipToProject",
+            "nameLocation": "444:26:59",
+            "parameters": {
+              "id": 29369,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 29368,
+                  "mutability": "mutable",
+                  "name": "_projectId",
+                  "nameLocation": "479:10:59",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29371,
+                  "src": "471:18:59",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 29367,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "471:7:59",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "470:20:59"
+            },
+            "returnParameters": {
+              "id": 29370,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "499:0:59"
+            },
+            "scope": 29377,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 29376,
+            "nodeType": "FunctionDefinition",
+            "src": "506:61:59",
+            "nodes": [],
+            "functionSelector": "61aec7a9",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setPermissionIndex",
+            "nameLocation": "515:18:59",
+            "parameters": {
+              "id": 29374,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 29373,
+                  "mutability": "mutable",
+                  "name": "_permissionIndex",
+                  "nameLocation": "540:16:59",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 29376,
+                  "src": "534:22:59",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 29372,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "534:5:59",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "533:24:59"
+            },
+            "returnParameters": {
+              "id": 29375,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "566:0:59"
+            },
+            "scope": 29377,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IJBOwnable",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          29377
+        ],
+        "name": "IJBOwnable",
+        "nameLocation": "67:10:59",
+        "scope": 29378,
+        "usedErrors": [],
+        "usedEvents": [
+          29357
+        ]
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 59
+}

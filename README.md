@@ -1,3 +1,14 @@
+This delegate allows the project owner to give varying token bonuses based on someone's ETH contribution size via 3 adjustable tiers.
+
+
+
+Special Thanks to simplemachines92 (https://github.com/simplemachine92) for letting us use some of his test to help bootstrap our own delegate testing
+
+The original Readme file can be found below
+
+//////////////////////////////////////////////////////////////////////////
+
+
 # juice-delegate-template
 Template used to code juicy solidity Delegate stuff - includes forge, libs, etc. 
 
